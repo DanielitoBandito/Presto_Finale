@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-
-
 </head>
 <body>
+
     <x-header />
+
     {{$slot}}
 
+    <x-footer />
 
     @vite(['resources/css/app.css'])
 
-    
 </body>
 </html>

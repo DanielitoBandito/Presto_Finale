@@ -5,8 +5,8 @@
         <h1 style= "font-size:80px;">PRESTO</h1>
     </div>
     <div class="navRight">
-        <button class="btnLogin">ACCEDI</button>
-        <button class="btnRegistrer">REGISTRATI</button>
+        <a href="/login"  class="btnLogin">ACCEDI</a>
+        <a href="/register" class="btnRegistrer">REGISTRATI</a>
     </div>
 </div>
 

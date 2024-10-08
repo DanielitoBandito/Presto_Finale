@@ -37,6 +37,9 @@
     width: 10%;
     height: 40px;
     border-radius: 30px;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
 }
 
 .btnRegistrer {
@@ -46,4 +49,7 @@
     width: 10%;
     height: 40px;
     border-radius: 30px;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
 }

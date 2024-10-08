@@ -17,12 +17,13 @@
                 aria-expandend ="false">
                 ciao, {{Auth::user()->name}}
             </a>
+            
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" 
-                    onclick="event.preventDefaul();document.querySelector('#form-logout').submit(); ">Logout</a>
+                <a class="dropdown-item" href="#" 
+                    onclick="event.preventDefault();document.querySelector('#form-logout').submit(); ">Logout</a>
 
-                </li>
-                <form action="{{route('logout')}} method="post" class="d-none" id="form-logout">@csrf</form>
+                
+                <form action={{route('logout')}} method="post" class="d-none" id="form-logout">@csrf</form>
 
             </ul>
         </li>

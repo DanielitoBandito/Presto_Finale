@@ -1,5 +1,5 @@
 <x-layout>
-    <form action="login" method="post">
+    <form action="/login" method="post">
         @csrf
 
         <label for="email">Email</label>

@@ -8,8 +8,10 @@ use App\Http\Controllers\UserController;
 Route::get('/', [HomeController::class,'index'])
 ->name('home.index');
 
-Route::get('/login' , [UserController::class, 'index'])
-->name('auth.login');
+Route::get('/create', [UserController::class, 'create'])
+->name('home.create')
+->middleware(['auth']);
+
 
 
 

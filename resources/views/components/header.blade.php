@@ -1,24 +1,24 @@
-<div style="width: 100%; height: 100px; background-color: rgb(0, 149, 182);  ">
+<div style="width: 100%; height: 50px; background-color: rgb(0, 149, 182);  ">
 </div>
 <div class="navcustom">
     <div class="navLeft">
         <h1 style= "font-size:80px;">PRESTO</h1>
     </div>
     <div class="navRight">
-        <a href="/login"  class="btnLogin">ACCEDI</a>
-        <a href="/register" class="btnRegistrer">REGISTRATI</a>
+        <a href="/login"  class="btn btn-success">ACCEDI</a>
+        <a href="/register" class="btn btn-danger">REGISTRATI</a>
     </div>
 
 
      @auth
 
-        <li class="nav-item dropdown">
+        <li class="btn btn-secondary" >
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expandend ="false">
                 ciao, {{Auth::user()->name}}
             </a>
             
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu ">
                 <li>
                     <a class="dropdown-item" href="#" 
                     onclick="event.preventDefault();document.querySelector('#form-logout').submit(); ">Logout</a>
@@ -58,6 +58,18 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sport</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profumi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Animali</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Musica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cosmetici</a>
                 </li>
 
 

@@ -12,3 +12,5 @@ Route::get('/login' , [UserController::class, 'index'])
 ->name('auth.login');
 
 
+
+

@@ -19,14 +19,17 @@
             </a>
             
             <ul class="dropdown-menu">
-                <a class="dropdown-item" href="#" 
+                <li>
+                    <a class="dropdown-item" href="#" 
                     onclick="event.preventDefault();document.querySelector('#form-logout').submit(); ">Logout</a>
 
                 
-                <form action={{route('logout')}} method="post" class="d-none" id="form-logout">@csrf</form>
+                    <form action={{route('logout')}} method="post" class="d-none" id="form-logout">@csrf</form>
 
+                </li>
             </ul>
         </li>
+
     @else 
     @endauth
 </div>

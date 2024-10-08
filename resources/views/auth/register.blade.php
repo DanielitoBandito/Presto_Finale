@@ -10,20 +10,34 @@
                     <input type="text" name="name" id="name" class="form-control">
                 </div>
 
+                @error('name')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" class="form-control">
                 </div>
+
+                @error('email')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
 
                 <div class="form-group">
                     <label for="password">Password</label>
                     <input type="password" name="password" id="password" class="form-control">
                 </div>
 
+                @error('password')
+                <div class="alert alert-danger">{{ $message }}</div>
+                @enderror
+
                 <div class="form-group">
                     <label for="password_confirmation">Conferma Password</label>
                     <input type="password" name="password_confirmation" id="password_confirmation" class="form-control">
                 </div>
+
+                
 
                 <br>
                

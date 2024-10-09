@@ -4,34 +4,34 @@
     <div class="navLeft">
         <h1 style= "font-size:80px;">PRESTO</h1>
     </div>
-    <div class="navRight">
-        <a href="/login"  class="btn btn-success">ACCEDI</a>
-        <a href="/register" class="btn btn-danger">REGISTRATI</a>
-    </div>
 
+    @if (!auth()->check())
+        <div class="navRight">
+            <a href="/login"  class="btn btn-success">ACCEDI</a>
+            <a href="/register" class="btn btn-danger">REGISTRATI</a>
+        </div>
+    @else
 
-     @auth
-
-        <li class="btn btn-secondary" >
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expandend ="false">
-                ciao, {{Auth::user()->name}}
-            </a>
+        @auth
+            <li class="btn btn-secondary" >
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expandend ="false">
+                    Ciao, {{Auth::user()->name}}
+                </a>
             
-            <ul class="dropdown-menu ">
-                <li>
-                    <a class="dropdown-item" href="#" 
-                    onclick="event.preventDefault();document.querySelector('#form-logout').submit(); ">Logout</a>
-
+                <ul class="dropdown-menu ">
+                    <li>
+                        <a class="dropdown-item" href="#" 
+                            onclick="event.preventDefault();document.querySelector('#form-logout').submit(); ">Logout
+                        </a>
                 
-                    <form action={{route('logout')}} method="post" class="d-none" id="form-logout">@csrf</form>
+                        <form action={{route('logout')}} method="post" class="d-none" id="form-logout">@csrf</form>
 
-                </li>
-            </ul>
-        </li>
-
-    @else 
-    @endauth
+                    </li>
+                </ul>
+            </li>
+        @else 
+        @endauth
+    @endif
 </div>
 
 

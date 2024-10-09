@@ -1,8 +1,8 @@
 <div>
-    <form>
-        Titolo<input type="text" class="form-control" name="title" id="title">
-        Prezzo<input type="text" class="form-control" name="price" id="price">
-        Descrizione<input type="text" class="form-control" name="description" id="description">
+    <form wire:submit="store" >
+        Titolo<input type="text" class="form-control" wire.model="title" id="title">
+        Prezzo<input type="text" class="form-control" wire.model="price" id="price">
+        Descrizione<input type="text" class="form-control" wire.model="description" id="description">
         <select name="" id="category" wire:model="category" class="form-control mt-3">
             <option value="">Seleziona una categoria</option>
 

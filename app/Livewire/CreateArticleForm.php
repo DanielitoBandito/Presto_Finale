@@ -30,6 +30,8 @@ class CreateArticleForm extends Component
             'user_id' => Auth::id()
         ]);
 
+        
+
 
         
     }

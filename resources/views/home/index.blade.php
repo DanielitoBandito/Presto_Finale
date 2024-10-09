@@ -3,7 +3,7 @@
     @auth
     <div class="my-5 text-center">
         <div class="container">
-            <a href="/create" class="btn btn-lg add_article_btn" >Inserisci Nuovo Articolo</a>
+            <a href="/create/article" class="btn btn-lg add_article_btn" >Inserisci Nuovo Articolo</a>
         </div>
     </div>
     @endauth

@@ -7,7 +7,7 @@
                 @csrf
                 <div class="form-group">
                     <label for="name">Nome</label>
-                    <input type="text" name="name" id="name" class="form-control">
+                    <input type="text" name="name" id="name" class="form-control" value="{{ old('name') }}">
                 </div>
 
                 @error('name')
@@ -16,7 +16,7 @@
 
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form-control">
+                    <input type="email" name="email" id="email" class="form-control" value="{{ old('email') }}">
                 </div>
 
                 @error('email')

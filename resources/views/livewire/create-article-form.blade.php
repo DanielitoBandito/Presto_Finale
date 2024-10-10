@@ -34,4 +34,9 @@
     <div class="d-flex justify-content-center">
         <button type="submit" class="btn btn-dark">Crea</button>
     </div>
+    @if (session()->has('success'))
+        <div class="alert alert-success text-center">
+            {{ session('success') }}
+        </div>
+    @endif
 </form>

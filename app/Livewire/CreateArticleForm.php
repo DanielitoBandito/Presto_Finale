@@ -29,10 +29,9 @@ class CreateArticleForm extends Component
             'user_id' => Auth::id()
         ]);
 
+        session()->flash('success', 'Articolo creato correttamente');
         
-
-
-        
+        $this->reset();
     }
 
 

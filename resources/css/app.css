@@ -95,12 +95,60 @@
     background-color: #87def1;
     color: black;
     height: 100%;
+    margin-left: 5px;
 }
 
 .btn-src:hover{
     background-color: #0d6e7d;
     color:white;
 }
+
+.btn-rg-hm{
+    display: inline-block; /* Assicura che <a> venga trattato come un bottone */
+    width: auto;
+    background-color: #87def1;
+    color: black;
+    height: 40px;
+    line-height: 40px; 
+    padding: 0 5px;
+    border-radius: 10px;
+    border: none;
+    text-align: center; /* Allinea il testo al centro */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-rg-hm:hover{
+    padding: 0 10px;
+    background-color: #0d6e7d;
+    color:white;
+}
+
+.log-btn{
+    color: black;
+    font-size: 1rem;
+    margin-right: 2px;
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.log-btn:hover{
+    text-decoration: underline;
+}
+
+.log-btn:focus{
+    font-size: 15px;
+}
+
+.dropdown-toggle{
+    background-color: #87def1;
+}
+
+.dropdown-toggle:hover{
+    background-color: #0d6e7d;
+    color: white;
+}
+
 
 
 
@@ -166,3 +214,8 @@
     padding: 12px;
     outline: none;
 }
+
+
+
+
+

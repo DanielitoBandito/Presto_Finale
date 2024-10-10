@@ -19,6 +19,9 @@ Route::get('/show/article/{article}', [ArticleController::class, 'show'])
 Route::get('/article/index', [ArticleController::class, 'index'])
 ->name('article.index');
 
+Route::get('/category/{category}', [ArticleController::class, 'byCategory'])
+->name('byCategory');
+
 
 
 

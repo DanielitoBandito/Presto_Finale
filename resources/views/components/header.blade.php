@@ -1,6 +1,5 @@
 <nav class="navbar navbar-expand-lg p-2">
     <div class="container-fluid">
-        <!-- Logo "PRESTO" -->
         <h1 class="logo" onclick="location.href='/'" style="cursor: pointer;">PRESTO</h1>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,9 +7,9 @@
         </button>
 
         <div class="collapse navbar-collapse"  id="navbarSupportedContent">
-            <!-- Links della navbar -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="margin-left: 20px;">
-                <li class="nav-item"><a class="nav-link" href="{{ route('article.index')}}">Tutti</a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ route('article.index')}}">Tutti</a></li>
+
+            {{-- <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="margin-left: 20px;">
                 <li class="nav-item"><a class="nav-link" href="#">Donna</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Uomo</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Bambini</a></li>
@@ -21,9 +20,24 @@
                 <li class="nav-item"><a class="nav-link" href="#">Animali</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Musica</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Cosmetici</a></li>
-            </ul>
+            </ul> --}}
 
-            <!-- Barra di ricerca -->
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
+                <ul class="dropdown-menu">
+
+                    @foreach ($categories as $category)
+                        <li><a class="dropdown-item text-capitalize" href="{{ route('byCategory',['category' => $category])}}">{{ $category->name }}</a></li>
+                        @if (!$loop->last)
+                            <hr class="dropdown-divider">
+                        @endif
+                    @endforeach
+
+                </ul>
+            </li>
+
+
+            
             <form class="d-flex" role="search">
                 <input class="form-control" type="search" placeholder="Cerca" aria-label="Search">
                 <button class="btn btn-src" type="submit" style="margin-right: 30px;">
@@ -34,7 +48,7 @@
             </form>
             
 
-            <!-- Pulsanti Accedi e Registrati / Menu Utente -->
+            
             <div>
                 @if (!auth()->check())
                 <div class="btn-group" role="group" aria-label="Basic example">

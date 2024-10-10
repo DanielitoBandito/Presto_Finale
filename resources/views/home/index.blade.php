@@ -8,16 +8,16 @@
     </div>
     @endauth
 
-    <section class="container">
-        <div class="article-grid">
-            <!-- Articolo 1 -->
-            <div class="article-card col-4">
-                <img src="https://via.placeholder.com/300x200" alt="Articolo 1" class="article-image">
-                <h3 class="article-title">Articolo 1</h3>
-                <p class="article-price">€49,99</p>
+    <div class="row height-custom justify-content-center align-items-center py-5">
+        @forelse ($articles as $article)
+            <div class="col-12 col-md-3">
+                <x-card :article="$article" />
             </div>
-        </div>
-    </section>
-    
-    
+        @empty
+            <div class="col-12">
+                <h3 class="text-center">Non sono ancora stati creati articoli</h3>
+            </div>
+        @endforelse
+    </div>
+
 </x-layout>

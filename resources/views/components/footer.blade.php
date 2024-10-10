@@ -1,3 +1,3 @@
-<footer style="background-color: rgb(0, 149, 182); text-align: center; position: absolute; bottom: 0; width: 100%">
+<footer class="footer text-white py-2" >
     <h5>©2024 Presto.it | Privacy Policy</h5>
 </footer>

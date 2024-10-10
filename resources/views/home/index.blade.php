@@ -1,5 +1,5 @@
 <x-layout>
-
+    
     @auth
     <div class="my-5 text-center">
         <div class="container">

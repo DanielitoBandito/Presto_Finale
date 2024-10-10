@@ -10,6 +10,7 @@
         <div class="collapse navbar-collapse"  id="navbarSupportedContent">
             <!-- Links della navbar -->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 " style="margin-left: 20px;">
+                <li class="nav-item"><a class="nav-link" href="{{ route('article.index')}}">Tutti</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Donna</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Uomo</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Bambini</a></li>

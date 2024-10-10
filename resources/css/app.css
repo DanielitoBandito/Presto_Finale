@@ -1,16 +1,6 @@
 @import 'bootstrap';
 
-.add_article_btn{
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
 
-
-.add_article_btn:hover{
-    background-color: #006c84;
-    color: white
-
-}
 
 .logo{
     display: inline-block;
@@ -36,6 +26,19 @@
 }
 
 /* ARTICLE */
+.add_article_btn{
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #0095B6;
+}
+
+
+.add_article_btn:hover{
+    background-color: #006c84;
+    color: white
+
+}
+
 .article-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

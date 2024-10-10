@@ -5,7 +5,6 @@ namespace App\Livewire;
 use App\Models\Article;
 use Livewire\Component;
 use Livewire\Attributes\Validate;
-use App\Livewire\CreateArticleForm;
 use Illuminate\Support\Facades\Auth;
 
 class CreateArticleForm extends Component

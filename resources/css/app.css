@@ -9,7 +9,7 @@
 .add_article_btn:hover{
     background-color: #006c84;
     color: white
-    
+
 }
 
 .logo{
@@ -21,7 +21,7 @@
     line-height: 1.2;
     font-weight: normal;
     font-family: sans-serif;
-    font-size: 80px;
+    font-size: 40px;
     background-color: #0095B6;
     border-radius: 16px;
     padding: 10px 20px;
@@ -29,15 +29,13 @@
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
-   
+
 .logo:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-   
-.logo > strong {
-    font-size: 80px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #007a95;
 }
 
+/* ARTICLE */
 .article-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -78,6 +76,93 @@
     font-weight: bold;
 }
 
-.btn-lg{
-    background-color: rgb(0, 149, 182);
+
+ /* NAVBAR */
+
+.nav-link{
+    font-size: 1.2rem;
+    color: white;
+    transition: 0.5s;
+
+}
+
+.navbar{
+    background-color: #0095b6;
+}
+
+.btn-src{
+    width: 20%;
+    background-color: #87def1;
+    color: black;
+    height: 100%;
+}
+
+.btn-src:hover{
+    background-color: #0d6e7d;
+    color:white;
+}
+
+
+
+
+/* REGISTER */
+.card{
+    border-radius: 12px;
+}
+
+.card-header{
+    background: #87def1;
+    text-align: center;
+}
+
+.card-body{
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #0095b6;
+}
+
+.card-body label{
+    color: white;
+    margin-top: 10px;
+}
+
+.btn-rg{
+    width: 50%;
+    background-color: #87def1;
+    color: rgb(0, 0, 0);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-rg:hover{
+    background-color: #0d6e7d;
+    color:white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.form-input-rg{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    transition: padding 0.3s; 
+}
+
+.form-input-rg:focus {
+    padding: 8px;
+    outline: none;
+}
+/* LOGIN */
+
+
+.form-input-lg{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    transition: padding 0.3s; 
+}
+
+.form-input-lg:focus {
+    padding: 12px;
+    outline: none;
 }

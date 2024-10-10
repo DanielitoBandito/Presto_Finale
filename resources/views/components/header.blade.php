@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary mt-1">
+<nav class="navbar navbar-expand-lg p-2">
     <div class="container-fluid">
         <!-- Logo "PRESTO" -->
         <h1 class="logo" onclick="location.href='/'" style="cursor: pointer;">PRESTO</h1>
@@ -24,8 +24,12 @@
 
             <!-- Barra di ricerca -->
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit" style="margin-right: 20px;">Cerca</button>
+                <input class="form-control" type="search" placeholder="Cerca" aria-label="Search">
+                <button class="btn btn-src" type="submit" style="margin-right: 20px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 18">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                                </svg>      
+                </button>
             </form>
 
             <!-- Pulsanti Accedi e Registrati / Menu Utente -->
@@ -36,13 +40,13 @@
                         <a href="/register" class="btn btn-danger">REGISTRATI</a>
                     </div>
                 @else
-                    <div class="btn-group dropdown">
+                    <div class="btn-group dropdown m-1">
                         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Ciao, {{ Auth::user()->name }}
                         </a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a>
+                                <a class="dropdown-item text-danger" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a>
                                 <form action="{{ route('logout') }}" method="post" class="d-none" id="form-logout">@csrf</form>
                             </li>
                         </ul>

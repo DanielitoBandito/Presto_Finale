@@ -1,44 +1,47 @@
 <x-layout>
 
     <x-form-errors />
+    
 
-    <div class="row">
-        <div class="col-xs-12">
+    <div class="mx-auto card shadow-lg" style=" width: 50%; ; margin-top: 50px ">
+        <div >
 
-            <form action="/register" method="post">
-                @csrf
-                <div class="form-group">
-                    <label for="name">Nome</label>
-                    <input type="text" name="name" id="name" class="form-control" value="{{ old('name') }}">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Registrazione</h4>
                 </div>
+                <div class="card-body">
+                    <form action="/register" method="post">
+                        @csrf
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" name="name" id="name" class="form-input-rg" value="{{ old('name') }}" required>
+                        </div>
 
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-input-rg" value="{{ old('email') }}" required>
+                        </div>
 
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form-control" value="{{ old('email') }}">
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" class="form-input-rg" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password_confirmation">Conferma Password</label>
+                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-input-rg" required>
+                        </div>
+
+                        <div class="form-group mt-4 text-center">
+                            <input type="submit" value="Registrati" class="btn btn-rg ">
+                        </div>
+                    </form>
                 </div>
+            </div>
 
-
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password" class="form-control">
-                </div>
-
-
-                <div class="form-group">
-                    <label for="password_confirmation">Conferma Password</label>
-                    <input type="password" name="password_confirmation" id="password_confirmation" class="form-control">
-                </div>
-
-                
-
-                <br>
-               
-                
-                <div class="form-group">
-                    <input type="submit" value="Registrati" class="btn btn-primary">
-                </div>
-            </form>
         </div>
     </div>
+
+
 </x-layout>

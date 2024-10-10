@@ -1,5 +1,18 @@
 @import 'bootstrap';
 
+::placeholder{
+    color: grey; 
+    opacity: 1;
+    transition: 0.2s;
+
+}
+
+input:focus::placeholder{
+    opacity: 0;
+    
+}
+
+
 footer{
     background-color: rgb(0, 149, 182)
 }
@@ -41,6 +54,29 @@ footer{
     color: white
 
 }
+
+.add_article_btn_fr{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #87def1;
+    transition: all 0.3s;
+}
+
+
+.add_article_btn_fr:hover{
+    background-color: #006c84;
+    color: white
+
+}
+
+.form_art{
+    background-color: #0095B6;
+    border-radius: 20px;
+}
+
+.form_art label{
+    color: white
+}
+
 
 .article-grid {
     display: grid;
@@ -224,6 +260,13 @@ footer{
     padding: 12px;
     outline: none;
 }
+
+.body{
+    background-color: #f2bd6e;
+}
+
+
+
 
 
 

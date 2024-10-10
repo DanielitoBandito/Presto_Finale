@@ -94,6 +94,7 @@ footer{
 
 .navbar{
     background-color: #0095b6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .btn-src{
@@ -102,11 +103,13 @@ footer{
     color: black;
     height: 100%;
     margin-left: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .btn-src:hover{
     background-color: #0d6e7d;
     color:white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .btn-rg-hm{
@@ -118,16 +121,17 @@ footer{
     line-height: 40px; 
     padding: 0 5px;
     border-radius: 10px;
-    border: none;
     text-align: center; /* Allinea il testo al centro */
     text-decoration: none;
     transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .btn-rg-hm:hover{
     padding: 0 10px;
     background-color: #0d6e7d;
     color:white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .log-btn{

@@ -1,11 +1,7 @@
 <x-layout>
 
-    <x-form-errors />
-    
-
     <div class="mx-auto card shadow-lg" style=" width: 50%; ; margin-top: 50px ">
         <div >
-
             <div class="card">
                 <div class="card-header">
                     <h4>Registrazione</h4>
@@ -15,33 +11,39 @@
                         @csrf
                         <div class="form-group">
                             <label for="name">Nome</label>
-                            <input type="text" name="name" id="name" class="form-input-rg" value="{{ old('name') }}" required>
+                            <input type="text" name="name" id="name" class="form-input-rg" value="{{ old('name') }}">
+                            @error('name')
+                                <p class="fst-italic text danger">{{ $message }}</p>
+                            @enderror
                         </div>
-
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" name="email" id="email" class="form-input-rg" value="{{ old('email') }}" required>
+                            <input type="email" name="email" id="email" class="form-input-rg" value="{{ old('email') }}">
+                            @error('email')
+                                <p class="fst-italic text danger">{{ $message }}</p>
+                            @enderror
                         </div>
-
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password" class="form-input-rg" required>
+                            <input type="password" name="password" id="password" class="form-input-rg">
+                            @error('password')
+                                <p class="fst-italic text danger">{{ $message }}</p>
+                            @enderror
                         </div>
-
                         <div class="form-group">
                             <label for="password_confirmation">Conferma Password</label>
-                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-input-rg" required>
+                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-input-rg">
+                            @error('password_confirmation')
+                                <p class="fst-italic text danger">{{ $message }}</p>
+                            @enderror
                         </div>
-
                         <div class="form-group mt-4 text-center">
-                            <input type="submit" value="Registrati" class="btn btn-rg ">
+                            <input type="submit" value="Registrati" class="btn btn-rg">
                         </div>
                     </form>
                 </div>
             </div>
-
         </div>
     </div>
-
 
 </x-layout>

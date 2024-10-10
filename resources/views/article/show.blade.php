@@ -35,7 +35,7 @@
             <div class="col-12 col-md-6 mb-3 height-custom text-center">
                 <h2 class="display-5"> <span class="fw-bold">Titolo: </span>{{$article->title}}</h2>
                 <div class="d-flex justify-content-center flex-column h-75">
-                    <h4 class="fw-bold">Prezzo: {{$article->price}}</h4>
+                    <h4 class="fw-bold">Prezzo: {{$article->price}} € </h4>
                     <h5 class="fw-bold">Descrizione: </h5>
                     <p>{{$article->description}}</p>
                 </div>

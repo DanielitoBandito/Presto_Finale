@@ -22,7 +22,7 @@
     </div>
     <div class="mb-3">
         <select id="category" wire:model.blur="category" class="form-control @error('category') is-invalid @enderror">
-            <option label disabled>Seleziona una categoria:</option>
+            <option value="" label disabled>Seleziona una categoria:</option>
             @foreach ($categories as $category)
                 <option value="{{ $category->id }}">{{ $category->name}}</option>
             @endforeach
@@ -39,4 +39,7 @@
             {{ session('success') }}
         </div>
     @endif
+
+    
 </form>
+

@@ -19,3 +19,4 @@ class ArticleController extends Controller implements HasMiddleware
         ];
     }
 }
+

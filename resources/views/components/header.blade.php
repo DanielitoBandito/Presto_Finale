@@ -58,6 +58,9 @@
                                 <a class="dropdown-item text-danger" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a>
                                 <form action="{{ route('logout') }}" method="post" class="d-none" id="form-logout">@csrf</form>
                             </li>
+                            <li>
+                                <a class="dropdown-item" href="{{ route('article.create') }}">Crea</a>
+                            </li>
                         </ul>
                     </div>
                 @endif

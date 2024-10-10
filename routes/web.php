@@ -13,5 +13,7 @@ route::get('/create/article', [ArticleController::class, 'create'])
 ->name('article.create')
 ->middleware(['auth']);
 
+route::get('/show/article/{article}', [ArticleController::class, 'show'])
+->name('article.show');
 
 

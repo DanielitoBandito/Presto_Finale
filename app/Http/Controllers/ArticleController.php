@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use Illuminate\Http\Request;
 use App\Http\Controllers\ArticleController;
 use Illuminate\Routing\Controllers\Middleware;
@@ -17,6 +18,10 @@ class ArticleController extends Controller implements HasMiddleware
         return [
             new Middleware('auth', only: ['create']),
         ];
+    }
+
+    public function show(Article $article){
+        return view('article.show', compact('article'));
     }
 }
 

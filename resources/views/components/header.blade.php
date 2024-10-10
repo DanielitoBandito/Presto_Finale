@@ -38,7 +38,7 @@
                 @if (!auth()->check())
                 <div class="btn-group" role="group" aria-label="Basic example">
                     <div class="col-5">
-                        <a href="/login" class="log-btn">ACCEDI/</a>
+                        <a href="/login" class="log-btn">ACCEDI</a>
                     </div>
                     <div class="col-6" >
                         <a href="/register" class="btn-rg-hm">REGISTRATI</a>

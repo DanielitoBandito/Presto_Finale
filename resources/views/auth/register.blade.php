@@ -1,6 +1,6 @@
 <x-layout>
 
-    <div class="mx-auto card shadow-lg" style=" width: 50%; ; margin-top: 50px ">
+    <div class="mx-auto card shadow-lg w-40 mt-5" >
         <div >
             <div class="card">
                 <div class="card-header">

@@ -11,10 +11,10 @@
 
             <li class="nav-item dropdown mx-3">
                 <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
-                <ul class="dropdown-menu bg-danger">
+                <ul class="dropdown-menu bg-body">
 
                     @foreach ($categories as $category)
-                        <li class="bg-danger"><a class="nav-link text-capitalize" href="{{ route('byCategory',['category' => $category])}}">{{ $category->name }}</a></li>
+                        <li class="bg-light"><a class="nav-link text-capitalize" href="{{ route('byCategory',['category' => $category])}}">{{ $category->name }}</a></li>
                         @if (!$loop->last)
                             <hr class="dropdown-divider">
                         @endif

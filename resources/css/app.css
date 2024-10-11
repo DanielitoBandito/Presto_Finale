@@ -1,5 +1,9 @@
 @import 'bootstrap';
 
+body{
+    overflow-x: hidden;
+}
+
 ::placeholder{
     color: grey; 
     opacity: 1;
@@ -15,7 +19,7 @@ input:focus::placeholder{
 
 
 footer{
-    background-color: rgb(0, 149, 182)
+    background-color: rgb(22, 66, 60)
 }
 
 
@@ -23,23 +27,24 @@ footer{
     display: inline-block;
     text-align: center;
     white-space: nowrap;
-    color: #FFFFFF;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     line-height: 1.2;
     font-weight: normal;
     font-family: sans-serif;
     font-size: 40px;
-    background-color: #0095B6;
+    background-color: rgb(233, 239, 236);
     border-radius: 16px;
     padding: 10px 20px;
-    border: 1px solid #0095B6;
+    border: 1px solid #000000;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
 .logo:hover {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background-color: #007a95;
+    background-color:rgb(106, 156, 137);
+    color:rgb(255, 255, 255);
 }
 
 /* ARTICLE */
@@ -60,10 +65,10 @@ footer{
 
 .category-button{
     color: rgb(0, 0, 0);
-    background-color: #f2bd6e;
+    background-color: rgb(196, 218, 210);
     border-radius: 16px;
     padding: 10px 20px;
-    border: 1px solid #005264;
+    border: 1px solid #000000;
     cursor: pointer;
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -78,17 +83,17 @@ footer{
 
 
 .category-button:focus{
-    background-color: #c69142;
-    color: white;
+    background-color: rgb(233, 239, 236);
+    color: rgb(0, 0, 0);
 }
 
 
 .detail-button{
     color: rgb(0, 0, 0);
-    background-color: #87def1;
+    background-color: rgb(106, 156, 137);
     border-radius: 16px;
     padding: 10px 20px;
-    border: 1px solid #005264;
+    border: 1px solid #000000;
     cursor: pointer;
     text-decoration: none;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
@@ -101,41 +106,41 @@ footer{
 
 
 .detail-button:focus{
-    background-color: #0d6e7d;
-    color: white;
+    background-color: rgb(233, 239, 236);
+    color: black;
 }
 
 
 
 
 .add_article_btn{
-    color: white;
+    color: rgb(0, 0, 0);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: #0095B6;
+    background-color: rgb(22, 66, 60);
 }
 
 
 .add_article_btn:hover{
-    background-color: #006c84;
-    color: white
+    background-color: rgb(106, 156, 137);
+    color: white;
 
 }
 
 .add_article_btn_fr{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: #87def1;
+    background-color: rgb(106, 156, 137);
     transition: all 0.3s;
 }
 
 
 .add_article_btn_fr:hover{
-    background-color: #006c84;
-    color: white
+    background-color: rgb(196, 218, 210);
+    color: black;
 
 }
 
 .form_art{
-    background-color: #0095B6;
+    background-color: rgb(22, 66, 60);
     border-radius: 20px;
 }
 
@@ -188,7 +193,7 @@ footer{
  /* NAVBAR */
 
 .category{
-    background-color: #87def1;
+    background-color: rgb(106, 156, 137);
     text-align: center;
     /* box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px; */
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
@@ -226,13 +231,13 @@ footer{
 }
 
 .navbar{
-    background-color: #0095b6;
+    background-color: rgb(22, 66, 60);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .btn-src{
     width: 20%;
-    background-color: #87def1;
+    background-color: rgb(233, 239, 236);
     color: black;
     height: 85%;
     margin-left: 5px;
@@ -240,15 +245,15 @@ footer{
 }
 
 .btn-src:hover{
-    background-color: #0d6e7d;
-    color:white;
+    background-color: rgb(106, 156, 137);
+    color:rgb(0, 0, 0);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .btn-rg-hm{
     display: inline-block; 
     width: auto;
-    background-color: #87def1;
+    background-color: rgb(233, 239, 236);
     color: black;
     height: 40px;
     line-height: 40px; 
@@ -262,8 +267,8 @@ footer{
 
 .btn-rg-hm:hover{
     padding: 0 10px;
-    background-color: #0d6e7d;
-    color:white;
+    background-color: rgb(106, 156, 137);
+    color:rgb(0, 0, 0);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -284,17 +289,18 @@ footer{
 }
 
 .dropdown-toggle{
-    background-color: #87def1;
+    background-color: rgb(106, 156, 137);
 }
 
 .dropdown-toggle:hover{
-    background-color: #0d6e7d;
-    color: white;
+    background-color: rgb(233, 239, 236);
+    color: black;
 }
 
 .form-control{
     height: 75%;
 }
+
 
 
 
@@ -306,14 +312,14 @@ footer{
 }
 
 .card-header{
-    background: #87def1;
+    background: rgb(106, 156, 137);
     text-align: center;
 }
 
 .card-body{
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
-    background-color: #0095b6;
+    background-color: rgb(22, 66, 60);
 }
 
 .card-body label{
@@ -324,14 +330,14 @@ footer{
 
 .btn-rg{
     width: 50%;
-    background-color: #87def1;
+    background-color: rgb(106, 156, 137);
     color: rgb(0, 0, 0);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .btn-rg:hover{
-    background-color: #0d6e7d;
-    color:white;
+    background-color: rgb(196, 218, 210);
+    color:rgb(0, 0, 0);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -353,7 +359,7 @@ footer{
 /* LOGIN */
 
 .lg-card{
-    background-color: #0095b6; 
+    background-color: rgb(22, 66, 60); 
     width: 100%; 
     max-width: 400px;
     border-top-left-radius: 0px;
@@ -375,7 +381,7 @@ footer{
 }
 
 .body{
-    background-color: #f2bd6e;
+    background-color: rgb(196, 218, 210);
 }
 
 /* SCHEDA DETTAGLIO ARTICOLO */
@@ -383,7 +389,7 @@ footer{
 
 
 #show_card{
-    background-color: #0095b6;
+    background-color: rgb(22, 66, 60);
     border-radius: 10px;
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.78);
     border-top-left-radius: 0px;

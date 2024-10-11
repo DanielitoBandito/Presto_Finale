@@ -121,18 +121,38 @@ footer{
 
  /* NAVBAR */
 
-
-.nav-item{
-    list-style-type: none;
-    border-radius: 5px;
+.category{
+    background-color: #87def1;
+    text-align: center;
+    /* box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px; */
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
-.nav-link{
-    font-size: 1.2rem;
+.nav-link-cat{
     color: rgb(0, 0, 0);
     transition: 0.2s;
     padding: 5px;
+    font-size: 1.4rem;
+    text-decoration: none;
 }
+
+.nav-link-cat:hover{
+    color: rgb(255, 255, 255);
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    color: rgb(0, 0, 0);
+    transition: 0.2s;
+    padding: 5px;
+
+}
+
+.nav-item{
+    list-style-type: none; 
+}
+
+
 
 .nav-link:hover{
     color: rgb(255, 255, 255);
@@ -232,6 +252,7 @@ footer{
 
 .card-body label{
     color: white;
+    font-size: 20px;
     margin-top: 10px;
 }
 
@@ -250,17 +271,28 @@ footer{
 
 .form-input-rg{
     width: 100%;
-    padding: 5px;
+    padding: 10px 35px;
+    padding-left: 8px;
     border: 1px solid #ccc;
     border-radius: 12px;
     transition: padding 0.3s; 
 }
 
 .form-input-rg:focus {
-    padding: 8px;
+    padding: 15px 35px;
+    padding-left: 5px;
+    
     outline: none;
 }
 /* LOGIN */
+
+.lg-card{
+    background-color: #0095b6; 
+    width: 100%; 
+    max-width: 400px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;   
+}
 
 
 .form-input-lg{
@@ -285,13 +317,22 @@ footer{
 
 
 #show_card{
-    background-color: #006c84;
+    background-color: #0095b6;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.78)
-    ;
-    
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.78);
 }
 
+.t-card-art{
+  color: white;
+}
+
+.p-card-art{
+    color: white;
+}
+
+.d-card-art{
+    color: white;
+}
 
 
 

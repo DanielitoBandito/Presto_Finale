@@ -7,14 +7,14 @@
         </button>
 
         <div class="collapse navbar-collapse"  id="navbarSupportedContent">
-            <li class="nav-item"><a class="nav-link" href="{{ route('article.index')}}">Tutti</a></li>
+            <li class="nav-item mx-5"><a class="nav-link" href="{{ route('article.index')}}">Tutti</a></li>
 
-            <li class="nav-item dropdown mx-3">
-                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categorie</a>
-                <ul class="dropdown-menu bg-body">
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link-cat" role="button" data-bs-toggle="dropdown">Categorie</a>
+                <ul class="dropdown-menu category">
 
                     @foreach ($categories as $category)
-                        <li class="bg-light"><a class="nav-link text-capitalize" href="{{ route('byCategory',['category' => $category])}}">{{ $category->name }}</a></li>
+                        <li ><a class="nav-link text-capitalize" href="{{ route('byCategory',['category' => $category])}}">{{ $category->name }}</a></li>
                         @if (!$loop->last)
                             <hr class="dropdown-divider">
                         @endif

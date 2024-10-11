@@ -15,14 +15,14 @@
     </div>
     <div class="mb-3">
         <label for="price" class="form-label">Prezzo:</label>
-        <input type="text" class="form-control @error('price') is-invalid @enderror" id="price" wire:model.blur='price' placeholder="Inserisci il prezzo">
+        <input type="number" step="0.01" class="form-control @error('price') is-invalid @enderror" id="price" wire:model.blur='price' placeholder="Inserisci il prezzo">
         @error('price')
             <p class="fst-italic text danger">{{ $message }}</p>
         @enderror
     </div>
     <div class="mb-3">
         <select id="category" wire:model.blur="category" class="form-control @error('category') is-invalid @enderror">
-            <option value="" label disabled>Seleziona una categoria:</option>
+            <option value="" label>Seleziona una categoria:</option>
             @foreach ($categories as $category)
                 <option value="{{ $category->id }}">{{ $category->name}}</option>
             @endforeach
@@ -39,7 +39,5 @@
             {{ session('success') }}
         </div>
     @endif
-
     
 </form>
-

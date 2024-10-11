@@ -13,21 +13,17 @@ class DatabaseSeeder extends Seeder
      * Seed the application's database.
      */
         public $categories = [
-            'donna',
-            'uomo',
-            'bambini',
-            'casa',
-            'elettronica',
-            'sport',
-            'profumi',
-            'animali',
-            'musica',
-            'cosmetici'
+            'Donna',
+            'Uomo',
+            'Bambini',
+            'Casa',
+            'Elettronica',
+            'Sport',
+            'Profumi',
+            'Animali',
+            'Musica',
+            'Cosmetici'
         ];
-
-
-
-
 
     public function run(): void
     {

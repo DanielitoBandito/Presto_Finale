@@ -25,10 +25,6 @@ class DatabaseSeeder extends Seeder
             'Cosmetici'
         ];
 
-
-
-
-
     public function run(): void
     {
         foreach($this->categories as $category){

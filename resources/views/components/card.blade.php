@@ -1,6 +1,6 @@
-<div class="card shadow text-center mb-3 ">
+<div class="card shadow text-center mb-3">
     <img src="" alt="">
-    <div class="card-body">
+    <div class="card-body ">
         <h4 class="card-title color-white">{{ $article->title }}</h4>
         <p class="card-description">{{ $article->description }}</p>
         <h6 class="card-price ">{{ $article->price }} €</h6>

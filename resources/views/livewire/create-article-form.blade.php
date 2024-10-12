@@ -23,7 +23,7 @@
     </div>
     <div class="mb-3">
         <label for="price" class="article-add">Prezzo:</label>
-        <input type="number" step="0.01" class="mb-4 form-control @error('price') is-invalid @enderror" id="price" wire:model.blur='price' placeholder="Inserisci il prezzo">
+        <input type="number" step="0.01" class="form-control @error('price') is-invalid @enderror" id="price" wire:model.blur='price' placeholder="Inserisci il prezzo">
         @error('price')
             <p class="error-message">{{ $message }}</p>
         @enderror

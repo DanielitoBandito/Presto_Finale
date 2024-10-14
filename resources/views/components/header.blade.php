@@ -28,7 +28,7 @@
            
             
             <div class="row position-absolute end-0 pb-0">
-                <form class="d-flex col-6 align-items-center justify-content-center" role="search">
+                <form class="d-flex col-6 align-items-center justify-content-center" role="search" action="{{ route('article.search')}}" method="GET">
                     <input name="query" class="form-control " type="search" placeholder="Cerca" aria-label="Search">
                     <button class="btn btn-src" type="submit" style="margin-right: 10px;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 18">

@@ -22,7 +22,7 @@ Route::get('/article/index', [ArticleController::class, 'index'])
 Route::get('/category/{category}', [ArticleController::class, 'byCategory'])
 ->name('byCategory');
 
-Route::get('/search/article', [PublicController::class, 'searchArticles'])
+Route::get('/search/article', [HomeController::class, 'searchArticles'])
 ->name('article.search');
 
 

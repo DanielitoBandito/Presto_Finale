@@ -9,9 +9,9 @@ use Illuminate\Support\Facades\Auth;
 
 class CreateArticleForm extends Component
 {
-    #[Validate('required| min:5')]
+    #[Validate('required| min:5 | max:45')]
     public $title;
-    #[Validate('required| min:10')]
+    #[Validate('required| min:20| max:150')]
     public $description;
     #[Validate('required| numeric')]
     public $price;

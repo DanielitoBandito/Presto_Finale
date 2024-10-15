@@ -8,28 +8,28 @@
 
 
     <div class="mb-3">
-        <label for="title" class="article-add">Titolo:</label>
-        <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" wire:model.blur="title" placeholder="Inserisci il titolo">
+        <label for="title" class="article-add"><p style="display: inline; color: red;">* </p>Titolo:</label>
+        <input type="text" class="form-control @error('title') is-invalid @enderror" id="title" wire:model.blur="title" placeholder="Inserisci il titolo (min 5 caratteri)">
         @error('title')
             <p class="error-message">{{ $message }}</p>
         @enderror
     </div>
     <div class="mb-3">
-        <label for="description" class="article-add">Descrizione:</label>
-        <textarea id="description" cols="30" rows="10" class="form-control @error('description') is-invalid @enderror" wire:model.blur="description" placeholder="Inserisci la descrizione"></textarea>
+        <label for="description" class="article-add"><p style="display: inline; color: red;">* </p>Descrizione:</label>
+        <textarea id="description" cols="30" rows="10" class="form-control @error('description') is-invalid @enderror" wire:model.blur="description" placeholder="Inserisci la descrizione (min 20 caratteri)"></textarea>
         @error('description')
             <p class="error-message">{{ $message }}</p>
         @enderror
     </div>
     <div class="mb-3">
-        <label for="price" class="article-add">Prezzo:</label>
+        <label for="price" class="article-add"><p style="display: inline; color: red;">* </p>Prezzo:</label>
         <input type="number" step="0.01" class="form-control @error('price') is-invalid @enderror" id="price" wire:model.blur='price' placeholder="Inserisci il prezzo">
         @error('price')
             <p class="error-message">{{ $message }}</p>
         @enderror
     </div>
     <div class="mb-3">
-        <label for="category" class="article-add">Categoria:</label>
+        <label for="category" class="article-add"><p style="display: inline; color: red;">* </p>Categoria:</label>
         <select id="category" wire:model.blur="category" class="fs-5 form-control @error('category') is-invalid @enderror">
             <option  value="" label >Seleziona una categoria:</option>
             @foreach ($categories as $category)
@@ -41,8 +41,9 @@
         @enderror
     </div>
     <div class="d-flex justify-content-center">
-        <button type="submit" class="btn add_article_btn_fr w-100">Crea</button>
+        <button type="submit" class="btn add_article_btn_fr w-100 mb-3">Crea</button>
     </div>
+    <p style="display: inline; color: white;">- I campi contrassegnati dal simbolo (*) sono obbligatori</p>
 
 
 </form>

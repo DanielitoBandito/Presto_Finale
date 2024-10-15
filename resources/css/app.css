@@ -340,10 +340,6 @@ footer {
 }
 
 
-
-
-
-
 /* REGISTER */
 .card {
     border-radius: 12px;
@@ -503,4 +499,10 @@ NUOVO ARTICOLO */
     border: none;
 }
 
-/* SEARCHBAR */
+/* IMMAGINI */
+
+.custom-image {
+    max-width: 100%; /* L'immagine non sarà più grande del contenitore */
+    height: auto;
+  }
+  

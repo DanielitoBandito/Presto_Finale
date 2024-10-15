@@ -1,7 +1,10 @@
 <nav class="navbar navbar-expand-lg p-2">
     <div class="container-fluid">
-        <h1 class="logo" onclick="location.href='/'" style="cursor: pointer; margin-top: 8px">PRESTO</h1>
-
+        {{-- <h1 class="logo" onclick="location.href='/'" style="cursor: pointer; margin-top: 8px">GARD</h1> --}}
+        <div class="col-1">
+            <img src="{{ asset('images/logo-color-edited.png') }}" alt="" onclick="location.href='/'" class="custom-image" >
+        </div>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,17 +31,22 @@
                 </ul>
             </li>
 
-            @auth
+
+
+                @auth
                 @if (Auth::user()->is_revisor)
                     <li class="nav-item">
+                        <span
+                            class="position-relative top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount()}}
+                        </span>
                         <a class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25"
                             href="{{ route('revisor.index') }}">Zona revisore</a>
-                        <span
-                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount()}}
-                        </span>
-                    </li>
+                        
+                    </li>   
                 @endif
-            @endauth
+                @endauth
+            
+            
 
 
 

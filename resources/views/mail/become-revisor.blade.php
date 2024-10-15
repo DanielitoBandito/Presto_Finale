@@ -1,4 +1,3 @@
-<x-layout>
 
     <div>
         <h1> Un utente ha chiesto di lavorare con noi</h1>
@@ -8,9 +7,3 @@
         <p>se vuoi renderl* revisor, clicca qui:</p>
         <a href="{{ route('make.revisor', compact('user')) }}">Rendi revisor</a>
     </div>
-
-
-
-
-
-</x-layout>

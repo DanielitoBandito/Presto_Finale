@@ -1,24 +1,24 @@
 @import 'bootstrap';
 
-body{
+body {
     overflow-x: hidden;
 }
 
-::placeholder{
-    color: grey; 
+::placeholder {
+    color: grey;
     opacity: 1;
     transition: 0.2s;
     font-size: large;
 
 }
 
-input:focus::placeholder{
+input:focus::placeholder {
     opacity: 0;
-    
+
 }
 
 
-footer{
+footer {
     background-color: rgb(22, 66, 60)
 }
 
@@ -27,13 +27,13 @@ footer{
 
 .logo:hover {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    background-color:rgb(106, 156, 137);
-    color:rgb(255, 255, 255);
+    background-color: rgb(106, 156, 137);
+    color: rgb(255, 255, 255);
 }
 
 /* ARTICLE */
 
-.text-truncate{
+.text-truncate {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -41,22 +41,22 @@ footer{
 
 
 
-.card-description{
+.card-description {
     color: white;
     font-size: 1.5rem;
 }
 
-.card-title{
+.card-title {
     color: white;
     font-size: 1.7rem;
 }
 
-.card-price{
+.card-price {
     color: white;
     font-size: 1.5rem;
 }
 
-.category-button{
+.category-button {
     color: rgb(0, 0, 0);
     background-color: rgb(196, 218, 210);
     border-radius: 16px;
@@ -70,18 +70,18 @@ footer{
 
 }
 
-.category-button:hover{
-    font-size: 1.25rem ;
+.category-button:hover {
+    font-size: 1.25rem;
 }
 
 
-.category-button:focus{
+.category-button:focus {
     background-color: rgb(233, 239, 236);
     color: rgb(0, 0, 0);
 }
 
 
-.detail-button{
+.detail-button {
     color: rgb(0, 0, 0);
     background-color: rgb(106, 156, 137);
     border-radius: 16px;
@@ -94,12 +94,12 @@ footer{
     width: auto;
 }
 
-.detail-button:hover{
-    font-size: 1.25rem ;
+.detail-button:hover {
+    font-size: 1.25rem;
 }
 
 
-.detail-button:focus{
+.detail-button:focus {
     background-color: rgb(233, 239, 236);
     color: black;
 }
@@ -107,20 +107,20 @@ footer{
 
 
 
-.add_article_btn{
+.add_article_btn {
     color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: rgb(22, 66, 60);
 }
 
 
-.add_article_btn:hover{
+.add_article_btn:hover {
     background-color: rgb(106, 156, 137);
     color: rgb(19, 19, 19);
 
 }
 
-.add_article_btn_fr{
+.add_article_btn_fr {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: rgb(106, 156, 137);
     transition: all 0.3s;
@@ -128,17 +128,17 @@ footer{
 }
 
 
-.add_article_btn_fr:hover{
+.add_article_btn_fr:hover {
     background-color: rgb(196, 218, 210);
     color: black;
 }
 
-.form_art{
+.form_art {
     background-color: rgb(22, 66, 60);
     border-radius: 20px;
 }
 
-.form_art label{
+.form_art label {
     color: white
 }
 
@@ -184,9 +184,9 @@ footer{
 }
 
 
- /* NAVBAR */
+/* NAVBAR */
 
- .logo{
+.logo {
     display: inline-block;
     text-align: center;
     white-space: nowrap;
@@ -206,25 +206,25 @@ footer{
 
 
 
-.category{
+.category {
     background-color: rgb(106, 156, 137);
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
-.nav-link-cat{
-    color:  rgb(196, 218, 210);
+.nav-link-cat {
+    color: rgb(196, 218, 210);
     transition: 0.2s;
     font-size: 1.4rem;
     text-decoration: none;
 
 }
 
-.nav-link-cat:hover{
+.nav-link-cat:hover {
     color: rgb(255, 255, 255);
 }
 
-.nav-link{
+.nav-link {
     font-size: 1.6rem;
     color: rgb(196, 218, 210);
     transition: 0.2s;
@@ -233,7 +233,7 @@ footer{
 
 }
 
-.nav-link-list{
+.nav-link-list {
     text-decoration: none;
     font-size: 1.6rem;
     color: rgb(4, 4, 4);
@@ -242,30 +242,30 @@ footer{
 
 }
 
-.nav-link-list:hover{
+.nav-link-list:hover {
     color: rgb(255, 255, 255);
 
 }
 
-.nav-item{
+.nav-item {
     list-style-type: none;
     margin-left: 30px;
-     
+
 }
 
 
 
-.nav-link:hover{
+.nav-link:hover {
     color: rgb(255, 255, 255);
 
 }
 
-.navbar{
+.navbar {
     background-color: rgb(22, 66, 60);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.btn-src{
+.btn-src {
     width: 20%;
     background-color: rgb(233, 239, 236);
     color: black;
@@ -274,35 +274,35 @@ footer{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.btn-src:hover{
+.btn-src:hover {
     background-color: rgb(106, 156, 137);
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.btn-rg-hm{
-    display: inline-block; 
+.btn-rg-hm {
+    display: inline-block;
     width: auto;
     background-color: rgb(106, 156, 137);
     color: black;
     height: 40px;
-    line-height: 40px; 
+    line-height: 40px;
     padding: 0 5px;
     border-radius: 10px;
-    text-align: center; 
+    text-align: center;
     text-decoration: none;
     transition: 0.3s;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
-.btn-rg-hm:hover{
+.btn-rg-hm:hover {
     padding: 0 10px;
     background-color: white;
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.log-btn{
+.log-btn {
     color: rgb(255, 255, 255);
     font-size: 1rem;
     margin-right: 2px;
@@ -310,32 +310,32 @@ footer{
     line-height: 40px;
 }
 
-.log-btn:hover{
+.log-btn:hover {
     text-decoration: underline;
 }
 
-.log-btn:focus{
+.log-btn:focus {
     font-size: 15px;
 }
 
-.dropdown-toggle{
+.dropdown-toggle {
     background-color: rgb(106, 156, 137);
     color: white;
     transition: 0.4s;
 }
 
-.dropdown-toggle:hover{
+.dropdown-toggle:hover {
     background-color: rgb(233, 239, 236);
     color: rgb(0, 0, 0);
 }
 
-.dropdown-toggle:focus{
+.dropdown-toggle:focus {
     background-color: rgb(233, 239, 236);
     color: rgb(0, 0, 0);
 }
 
 
-.form-control{
+.form-control {
     height: 75%;
 }
 
@@ -345,47 +345,47 @@ footer{
 
 
 /* REGISTER */
-.card{
+.card {
     border-radius: 12px;
 }
 
-.card-header{
+.card-header {
     background: rgb(106, 156, 137);
     text-align: center;
 }
 
-.card-body{
+.card-body {
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
     background-color: rgb(22, 66, 60);
 }
 
-.card-body label{
+.card-body label {
     color: white;
     font-size: 20px;
     margin-top: 10px;
 }
 
-.btn-rg{
+.btn-rg {
     width: 50%;
     background-color: rgb(106, 156, 137);
     color: rgb(0, 0, 0);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.btn-rg:hover{
+.btn-rg:hover {
     background-color: rgb(196, 218, 210);
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.form-input-rg{
+.form-input-rg {
     width: 100%;
     padding: 10px 35px;
     padding-left: 8px;
     border: 1px solid #ccc;
     border-radius: 12px;
-    transition: padding 0.3s; 
+    transition: padding 0.3s;
 }
 
 .form-input-rg:focus {
@@ -394,23 +394,24 @@ footer{
     box-shadow: rgba(40, 184, 182, 0.814) 0px 5px 15px;
     outline: none;
 }
+
 /* LOGIN */
 
-.lg-card{
-    background-color: rgb(22, 66, 60); 
-    width: 100%; 
+.lg-card {
+    background-color: rgb(22, 66, 60);
+    width: 100%;
     max-width: 400px;
     border-top-left-radius: 0px;
-    border-top-right-radius: 0px;   
+    border-top-right-radius: 0px;
 }
 
 
-.form-input-lg{
+.form-input-lg {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 12px;
-    transition: padding 0.3s; 
+    transition: padding 0.3s;
 }
 
 .form-input-lg:focus {
@@ -419,35 +420,35 @@ footer{
     box-shadow: rgba(40, 184, 182, 0.814) 0px 5px 15px;
 }
 
-.body{
+.body {
     background-color: rgb(196, 218, 210);
 }
 
 /* SCHEDA DETTAGLIO ARTICOLO */
 
 
-.card-show{
+.card-show {
     min-height: 600px;
 }
 
-#show_card{
+#show_card {
     background-color: rgb(22, 66, 60);
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.78);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.78);
     border-top-left-radius: 0px;
-    border-top-right-radius: 0px;  
+    border-top-right-radius: 0px;
     height: 80%;
 }
 
-.t-card-art{
-  color: white;
-}
-
-.p-card-art{
+.t-card-art {
     color: white;
 }
 
-.d-card-art{
+.p-card-art {
+    color: white;
+}
+
+.d-card-art {
     color: white;
 }
 
@@ -456,7 +457,7 @@ footer{
 
 /* ERRORI */
 
-.error-message{
+.error-message {
     background-color: rgb(192, 106, 106);
     color: rgb(255, 255, 255);
     font-size: 15px;
@@ -476,12 +477,12 @@ footer{
 /* 
 NUOVO ARTICOLO */
 
-.article-add{
+.article-add {
     color: white;
     font-size: 1.2rem;
 }
 
-.form-input-add{
+.form-input-add {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -491,20 +492,15 @@ NUOVO ARTICOLO */
     transition: all 0.3s;
 }
 
-.form-input-add:focus{
+.form-input-add:focus {
     outline: none;
     box-shadow: rgba(40, 184, 182, 0.814) 0px 5px 15px;
 }
 
-.alert-success{
+.alert-success {
     background-color: #14d8b1f1;
     font-weight: bold;
     border: none;
 }
 
-
-/* PROVA NUOVO LAYOUT */
-
-
-
-
+/* SEARCHBAR */

@@ -25,22 +25,25 @@
                                 <img src="#" class="d-block w-100 rounded shadow">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#caroselExample" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#caroselExample"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#caroselExample" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#caroselExample"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mb-3 text-center">
-                    <h2 id="card_title" class="display-5 t-card-art"> <span class="fw-bold">Titolo: </span>{{$article->title}}</h2>
+                    <h2 id="card_title" class="display-5 t-card-art"> <span class="fw-bold">Titolo:
+                        </span>{{ $article->title }}</h2>
                     <div class="d-flex justify-content-center flex-column" style="height: 85%;">
-                        <h4 class="p-card-art">Prezzo: {{$article->price}} € </h4>
+                        <h4 class="p-card-art">Prezzo: {{ $article->price }} € </h4>
                         <h5 class="d-card-art">Descrizione: </h5>
-                        <h5 class="d-card-art">{{$article->description}}</h5>
+                        <h5 class="d-card-art">{{ $article->description }}</h5>
                     </div>
                 </div>
             </div>

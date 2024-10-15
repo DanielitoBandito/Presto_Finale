@@ -8,7 +8,8 @@
 
         <div class="d-flex justify-content-evenly align-items-center mt-5">
             <a href="{{ route('article.show', compact('article')) }}" class="detail-button">Dettaglio</a>
-            <a href="{{ route('byCategory',['category' => $article->category])}}" class="category-button text-capitalize">{{ $article->category->name }}</a>
+            <a href="{{ route('byCategory', ['category' => $article->category]) }}"
+                class="category-button text-capitalize">{{ $article->category->name }}</a>
         </div>
     </div>
 </div>

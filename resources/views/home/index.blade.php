@@ -1,17 +1,16 @@
 <x-layout>
-    
+
     @auth
-    <div class="my-5 text-center">
-        <div class="container">
-            <a href="{{ route('article.create') }}" class="btn btn-lg add_article_btn" >Inserisci Nuovo Articolo</a>
+        <div class="my-5 text-center">
+            <div class="container">
+                <a href="{{ route('article.create') }}" class="btn btn-lg add_article_btn">Inserisci Nuovo Articolo</a>
+            </div>
         </div>
-    </div>
     @endauth
     @if (session()->has('errorMessage'))
-    <div class="alert alert-danger text-center-shadow rounded w-50">
-        {{session('errorMessage')}}
-    </div>
-        
+        <div class="alert alert-danger text-center-shadow rounded w-50">
+            {{ session('errorMessage') }}
+        </div>
     @endif
     <div class="row height-custom justify-content-center align-items-center py-5 mx-4">
         @forelse ($articles as $article)
@@ -25,6 +24,6 @@
         @endforelse
     </div>
 
-    
+
 
 </x-layout>

@@ -15,8 +15,10 @@
                 <ul class="dropdown-menu category">
 
                     @foreach ($categories as $category)
-                        <li><a class="nav-link-list text-capitalize"
-                                href="{{ route('byCategory', ['category' => $category]) }}">{{ $category->name }}</a>
+                        <li>
+                            <a class="nav-link-list text-capitalize"
+                                href="{{ route('byCategory', ['category' => $category]) }}">{{ $category->name }}
+                            </a>
                         </li>
                         @if (!$loop->last)
                             <hr class="dropdown-divider">
@@ -25,19 +27,19 @@
 
                 </ul>
             </li>
-            
-                @auth
+
+            @auth
                 @if (Auth::user()->is_revisor)
-                <li class="nav-item">
-                    <a class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25" 
-                    href="{{route('revisor.index')}}">Zona revisore</a>
-                    <span 
-                         class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{\App\Models\Article::toBeRevisedCount()}}
-                    </span>
-                </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25"
+                            href="{{ route('revisor.index') }}">Zona revisore</a>
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}
+                        </span>
+                    </li>
                 @endif
-                @endauth
-            
+            @endauth
+
 
 
 
@@ -57,6 +59,9 @@
                         </svg>
                     </button>
                 </form>
+
+
+
 
                 <div class="col-5 p-0">
                     @if (!auth()->check())
@@ -95,8 +100,3 @@
         </div>
     </div>
 </nav>
-
-
-
-
-

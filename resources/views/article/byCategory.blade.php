@@ -4,12 +4,12 @@
         <div class="row py-5 justify-content-center align-items-center text-center">
             <div class="col-12 pt-5">
                 <h1 class="display-2 ">
-                    Categoria:  <span class="text-capitalize">{{ $category->name }}</span>
+                    Categoria: <span class="text-capitalize">{{ $category->name }}</span>
                 </h1>
             </div>
         </div>
         <div class="row height-custom justify-content-center align-items-center py-5">
-            
+
             @forelse ($articles as $article)
                 <div class="col-12 col-md-3">
                     <x-card :article="$article" />
@@ -21,7 +21,7 @@
                     </h3>
 
                     @auth
-                        <a href="{{ route('article.create') }}" class="btn btn-dark my-5" >Inserisci Nuovo Articolo</a>
+                        <a href="{{ route('article.create') }}" class="btn btn-dark my-5">Inserisci Nuovo Articolo</a>
                     @endauth
                 </div>
             @endforelse

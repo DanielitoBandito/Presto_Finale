@@ -115,6 +115,7 @@ footer{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: rgb(106, 156, 137);
     transition: all 0.3s;
+    color: white;
 }
 
 
@@ -274,7 +275,7 @@ footer{
 .btn-rg-hm{
     display: inline-block; 
     width: auto;
-    background-color: rgb(233, 239, 236);
+    background-color: rgb(106, 156, 137);
     color: black;
     height: 40px;
     line-height: 40px; 
@@ -288,13 +289,13 @@ footer{
 
 .btn-rg-hm:hover{
     padding: 0 10px;
-    background-color: rgb(106, 156, 137);
+    background-color: white;
     color:rgb(0, 0, 0);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .log-btn{
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 1rem;
     margin-right: 2px;
     text-decoration: none;
@@ -380,9 +381,9 @@ footer{
 }
 
 .form-input-rg:focus {
-    padding: 15px 35px;
+    padding: 12px 35px;
     padding-left: 5px;
-    
+    box-shadow: rgba(40, 184, 182, 0.814) 0px 5px 15px;
     outline: none;
 }
 /* LOGIN */
@@ -407,6 +408,7 @@ footer{
 .form-input-lg:focus {
     padding: 12px;
     outline: none;
+    box-shadow: rgba(40, 184, 182, 0.814) 0px 5px 15px;
 }
 
 .body{
@@ -443,12 +445,17 @@ footer{
 .error-message{
     background-color: rgb(192, 106, 106);
     color: rgb(255, 255, 255);
-    font-size: 20px;
+    font-size: 15px;
     padding: 12px;
     border-radius: 5px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    margin-top: -2px;
+    margin-top: -10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 2px;
 }
 
 
@@ -457,9 +464,23 @@ NUOVO ARTICOLO */
 
 .article-add{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
+.form-input-add{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    resize: vertical;
+    transition: all 0.3s;
+}
+
+.form-input-add:focus{
+    outline: none;
+    box-shadow: rgba(40, 184, 182, 0.814) 0px 5px 15px;
+}
 
 /* PROVA NUOVO LAYOUT */
 

@@ -73,79 +73,7 @@
     </div>
 </nav>
 
-<!-- <nav class="navbar navbar-expand-lg p-2">
-    <div class="container-fluid justify-content-between align-items-center">
 
-
-        <h1 class="logo col-1 "  style="cursor: pointer;">PRESTO</h1>
-        <button onclick="location.href='/'" class="logo col-1">PRESTO</button>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-
-       
-        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('article.index') }}">Tutti</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link-cat" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Categorie
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        @foreach ($categories as $category)
-                            <li>
-                                <a class="dropdown-item text-capitalize" href="{{ route('byCategory', ['category' => $category]) }}">{{ $category->name }}</a>
-                            </li>
-                            @if (!$loop->last)
-                                <hr class="dropdown-divider">
-                            @endif
-                        @endforeach
-                    </ul>
-                </li>
-            </ul>
-
-            <div class="d-flex col-lg-5 justify-content-center">
-                <form class="d-flex align-items-center w-100" role="search" action="{{ route('article.search') }}" method="GET">
-                    <input name="query" class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
-                    <button class="btn btn-src" type="submit">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 18">
-                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                        </svg>
-                    </button>
-                </form>
-            </div>
-
-            <div class="d-flex align-items-center">
-                @if (!auth()->check())
-                    <div class="btn-group" role="group">
-                        <a href="/login" class="btn btn-outline-primary me-2">Accedi</a>
-                        <a href="/register" class="btn btn-primary">Registrati</a>
-                    </div>
-                @else
-                    <div class="dropdown">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            Ciao, {{ Auth::user()->name }}
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li>
-                                <a class="dropdown-item" href="{{ route('article.create') }}">Crea</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item text-danger" href="#" onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a>
-                                <form action="{{ route('logout') }}" method="post" class="d-none" id="form-logout">@csrf</form>
-                            </li>
-                        </ul>
-                    </div>
-                @endif
-            </div>
-        </div>
-    </div>
-</nav> -->
 
 
 

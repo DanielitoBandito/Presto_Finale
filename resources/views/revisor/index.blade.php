@@ -25,7 +25,7 @@
                     <h3>Autore: {{$article_to_check->user->name}}</h3>
                     <h4>{{$article_to_check->price}} €</h4>
                     <h4 class="fst-italic text-muted">#{{$article_to_check->category->name}}</h4>
-                    <p class="h6">{{$artcile_to_check->description}}</p>
+                    <p class="h6">{{$article_to_check->description}}</p>
                 </div>
                 <div class="d-flex pb-4 justify-content-around">
                     <form action="{{route('reject' , ['article' => $article_to_check])}}" method="POST">

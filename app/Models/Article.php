@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Article;
 use App\Models\Category;
 use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
@@ -42,7 +43,16 @@ class Article extends Model
     }
 
     
+    public function setAccepted($value){
 
+        $this->is_accepted = $value;
+        $this->save();
+        return true;
+    }
+
+    public static function toBeRevisedCount(){
+        return Article::where('is_accepted' , null)->count();
+    }
    
 
     

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\RevisorController;
 
 // ROTTA HOMEPAGE
 Route::get('/', [HomeController::class,'index'])
@@ -24,6 +25,19 @@ Route::get('/category/{category}', [ArticleController::class, 'byCategory'])
 
 Route::get('/search/article', [HomeController::class, 'searchArticles'])
 ->name('article.search');
+
+
+Route::get('revisor/index' , [RevisorController::class, 'index'])->middleware('isRevisor')
+->name('revisor.index');
+
+Route::patch('/accept/{article}' , [RevisorController::class, 'accept'])
+->name('accept');
+
+Route::patch('/reject/{article}' , [RevisorController::class, 'reject'])
+->name('reject');
+
+
+
 
 
 

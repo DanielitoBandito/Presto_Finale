@@ -32,6 +32,15 @@ footer{
 }
 
 /* ARTICLE */
+
+.text-truncate{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
 .card-description{
     color: white;
     font-size: 1.5rem;
@@ -418,6 +427,9 @@ footer{
 /* SCHEDA DETTAGLIO ARTICOLO */
 
 
+.card-show{
+    min-height: 600px;
+}
 
 #show_card{
     background-color: rgb(22, 66, 60);
@@ -425,6 +437,7 @@ footer{
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.78);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;  
+    height: 80%;
 }
 
 .t-card-art{
@@ -438,6 +451,8 @@ footer{
 .d-card-art{
     color: white;
 }
+
+
 
 
 /* ERRORI */
@@ -481,6 +496,13 @@ NUOVO ARTICOLO */
     outline: none;
     box-shadow: rgba(40, 184, 182, 0.814) 0px 5px 15px;
 }
+
+.alert-success{
+    background-color: #14d8b1f1;
+    font-weight: bold;
+    border: none;
+}
+
 
 /* PROVA NUOVO LAYOUT */
 

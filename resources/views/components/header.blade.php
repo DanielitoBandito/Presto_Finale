@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg p-2">
     <div class="container-fluid">
-        <h1 class="logo" onclick="location.href='/'" style="cursor: pointer;">PRESTO</h1>
+        <h1 class="logo" onclick="location.href='/'" style="cursor: pointer; margin-top: 8px">PRESTO</h1>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

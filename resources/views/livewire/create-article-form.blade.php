@@ -1,10 +1,11 @@
-<form class="form_art shadow p-3 my-2 " wire:submit="store">
+<form class="form_art shadow p-3 " wire:submit="store">
 
     @if (session()->has('success'))
         <div class="alert alert-success text-center">
-            {{ session('success') }}
+            {{ session('success') }}!
         </div>
     @endif
+
 
 
     
@@ -25,7 +26,7 @@
     </div>
     <div class="mb-3">
         <label for="" class="article-add"><p style="display: inline; color: red;">* </p>Prezzo:</label>
-        <input type="number" step="5"  class="form-input-add @error('price') is-invalid @enderror" id="price" wire:model.blur='price' placeholder="Inserisci il prezzo">
+        <input type="number" step="0.1"  class="form-input-add @error('price') is-invalid @enderror" id="price" wire:model.blur='price' placeholder="Inserisci il prezzo">
         @error('price')
             <p class="error-message">{{ $message }}</p>
         @enderror

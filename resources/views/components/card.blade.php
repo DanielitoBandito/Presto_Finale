@@ -2,7 +2,7 @@
     <img src="" alt="">
     <div class="card-body ">
         <h4 class="card-title color-white">{{ $article->title }}</h4>
-        <p class="card-description">{{ $article->description }}</p>
+        <p class="card-description text-truncate">{{ $article->description }}</p>
         <h6 class="card-price ">{{ $article->price }} €</h6>
 
 

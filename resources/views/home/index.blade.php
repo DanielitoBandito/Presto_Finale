@@ -7,18 +7,9 @@
             </div>
         </div>
     @endauth
-    @if (session()->has('errorMessage'))
-        <div class="alert alert-danger text-center-shadow rounded w-50">
-            {{ session('errorMessage') }}
-        </div>
-    @endif
+    
 
-    @if (session()->has('message'))
-    <div class="alert alert-danger text-center-shadow rounded w-50">
-        {{session('message')}}
-    </div>
-        
-    @endif
+    
 
     <div class="row height-custom justify-content-center align-items-center py-5 mx-4">
         @forelse ($articles as $article)

@@ -70,11 +70,13 @@
                             <li>
                                 <a class="dropdown-item" href="{{ route('article.create') }}">Crea articolo</a>
                             </li>
-                            <li>
-                                <a class="dropdown-item" href="{{ route('revisor.index') }}">Revisore
-                                    <span class="badge rounded-pill bg-danger">
-                                        {{ \App\Models\Article::toBeRevisedCount() }}</span></a>
-                            </li>
+                            @if(Auth::user()->is_revisor == true)
+                                <li>
+                                    <a class="dropdown-item" href="{{ route('revisor.index') }}">Revisore
+                                        <span class="badge rounded-pill bg-danger">
+                                            {{ \App\Models\Article::toBeRevisedCount() }}</span></a>
+                                </li>
+                            @endif
                             <li>
                                 <a class="dropdown-item text-danger" href="#"
                                     onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a>

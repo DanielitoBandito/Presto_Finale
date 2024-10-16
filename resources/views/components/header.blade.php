@@ -31,22 +31,6 @@
                 </ul>
             </li>
 
-
-
-            @auth
-                @if (Auth::user()->is_revisor)
-                    <li class="nav-item">
-                        <span
-                            class="position-relative top-0 start-100 translate-middle badge rounded-pill bg-danger">{{ \App\Models\Article::toBeRevisedCount() }}
-                        </span>
-                        <a class="nav-link btn btn-outline-success btn-sm position-relative w-sm-25"
-                            href="{{ route('revisor.index') }}">Zona revisore</a>
-
-                    </li>
-                @endif
-            @endauth
-
-
             <form class="col-8 d-flex mx-auto align-items-center justify-content-center" role="search"
                 action="{{ route('article.search') }}" method="GET">
                 <div class="input-group">
@@ -84,13 +68,18 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li>
+                                <a class="dropdown-item" href="{{ route('article.create') }}">Crea articolo</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="{{ route('revisor.index') }}">Revisore
+                                    <span class="badge rounded-pill bg-danger">
+                                        {{ \App\Models\Article::toBeRevisedCount() }}</span></a>
+                            </li>
+                            <li>
                                 <a class="dropdown-item text-danger" href="#"
                                     onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a>
                                 <form action="{{ route('logout') }}" method="post" class="d-none" id="form-logout">
                                     @csrf</form>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="{{ route('article.create') }}">Crea</a>
                             </li>
                         </ul>
                     </div>

@@ -5,6 +5,13 @@
                 <div class="rounded shadow bg-body-secondary">
                     <h1 class="display-5 text-center pb-2"> Revisor dashboard</h1>
                 </div>
+
+            <div class="rounded shadow bg-body-secondary">
+                <a href="{{ route('table.index') }}" class="display-5 text-center pb-2">Articoli revisionati</a>
+            </div>
+
+
+        
             </div>
         </div>
         @if($article_to_check)
@@ -36,14 +43,25 @@
                     <form action="{{route('accept' , ['article' => $article_to_check])}}" method="POST">
                         @csrf
                         @method('PATCH')
-                        <button class="btn btn-danger py-2 px-5 fw-bold">Accetta</button>
+                        <button class="btn btn-success py-2 px-5 fw-bold">Accetta</button>
                     </form>
+
+                    @if(!is_null($article_to_check->is_accepted))  <!-- Se l'articolo è stato revisionato (accepted o rejected) -->
+                    <form action="{{ route('revisor.undoLastAction', ['article' => $article_to_check->id]) }}" method="POST">
+                    @csrf
+                    @method('PATCH')
+                    <button class="btn btn-warning">Annulla Revisione</button>
+                    </form>
+                    @endif
+
                     @if(session()->has('message'))
                     <div class="row justify-content-center">
                         <div class="col-5 alert-alert-success text-center shadow rounded">
                             {{session('message')}}
                         </div>
                     </div>
+
+                    
                     @endif
                 </div>
             </div>

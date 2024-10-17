@@ -46,6 +46,12 @@ Route::get('/make/revisor/{user}', [RevisorController::class, 'makeRevisor'])
 Route::get('/revisor/question', [RevisorController::class, 'requestQuestion'])
 ->name('revisor.question');
 
+Route::patch('/revisor/undo/{article}', [RevisorController::class, 'undoLastAction'])
+->name('revisor.undoLastAction');
+
+Route::get('/table/article', [RevisorController::class, 'Table'])
+->name('table.index');
+
 
 
 

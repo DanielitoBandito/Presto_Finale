@@ -11,7 +11,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <li class="nav-item mx-auto"><a class="nav-link" href="{{ route('article.index') }}">Tutti</a></li>
+            <li class="nav-item mx-auto"><a class="nav-link-cat" href="{{ route('article.index') }}">Tutti</a></li>
 
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link-cat mx-auto" role="button" data-bs-toggle="dropdown">Categorie</a>
@@ -77,6 +77,7 @@
                                             {{ \App\Models\Article::toBeRevisedCount() }}</span></a>
                                 </li>
                             @endif
+                            <li>
                                 <a class="dropdown-item text-danger" href="#"
                                     onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a>
                                 <form action="{{ route('logout') }}" method="post" class="d-none" id="form-logout">

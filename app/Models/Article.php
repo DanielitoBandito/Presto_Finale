@@ -6,6 +6,7 @@ namespace App\Models;
 use App\Models\Article;
 use App\Models\Category;
 use Laravel\Scout\Searchable;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -51,10 +52,12 @@ class Article extends Model
         return true;
     }
 
-    public static function toBeRevisedCount(){
-        return Article::where('is_accepted' , null)->count();
+    public static function toBeRevisedCount()
+    {
+        $userId = Auth::id();
+        return self::where('is_accepted', null)
+                ->where('user_id', '!=', $userId)
+                ->count();
     }
-   
-
-    
+        
 }

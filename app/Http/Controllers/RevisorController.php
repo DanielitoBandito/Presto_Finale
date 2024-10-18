@@ -14,16 +14,20 @@ use Illuminate\Support\Facades\Artisan;
 class RevisorController extends Controller
 {
     public function index(){
-        $article_to_check = Article::where('is_accepted', null)->first();
-        return view ('revisor.index', compact('article_to_check'));
+        $user = Auth::user();
+        $article_to_check = Article::where('is_accepted', null)
+                                    ->where('user_id', '!=', $user->id)
+                                    ->first();
+        return view('revisor.index', compact('article_to_check'));
     }
+    
 
     public function accept(Article $article){
         $article->setAccepted(true);
         $this->logAction($article, 'accepted');
         return redirect()
         ->back()
-        ->with('message' , "Hai accettato l'articolo $article->title");
+        ->with(['message' => "Hai accettato l'articolo: $article->title", 'status' => 'success']);
     }
 
     public function reject(Article $article){
@@ -31,7 +35,7 @@ class RevisorController extends Controller
         $this->logAction($article, 'rejected');
         return redirect()
         ->back()
-        ->with('message' , "Hai rifiutato l'articolo $article->title");
+        ->with(['message' => "Hai rifiutato l'articolo: $article->title", 'status' => 'danger']);
     }
 
     private function logAction(Article $article, string $action){

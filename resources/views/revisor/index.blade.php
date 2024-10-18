@@ -1,4 +1,7 @@
 <x-layout>
+
+    <h1 style="text-align: center">Articoli da revisionare:</h1>
+    
     <div class="container-fluid pt-5">
         <div class="row">
             <div class="col-md-3">
@@ -84,12 +87,16 @@
                 <div class="row">
                     @if (session()->has('message'))
                         <div class="row justify-content-center">
-                            <div class="alert alert-success fade show position-fixed top-0 start-50 translate-middle-x w-75" role="alert" style="z-index: 1050;">
-                                {{ session('message') }}
+                            <div class="col-12 text-center">
+                                <div class="alert alert-{{ session('status') }} fade show position-fixed top-3 start-50 translate-middle-x" role="alert" style="z-index: 1050;">
+                                    {{ session('message') }}
+                                </div>
                             </div>
                         </div>  
                     @endif
                 </div>
+                
+                
             </div>
 
             <div class="col">

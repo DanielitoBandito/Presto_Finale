@@ -60,7 +60,9 @@
     <div class="d-flex justify-content-center">
         <button type="submit" class="btn add_article_btn_fr w-100 mb-3">Crea</button>
     </div>
-    <p style="display: inline; color: white;">- I campi contrassegnati dal simbolo (*) sono obbligatori</p>
+    <p style="display: inline; color: white;">- I campi contrassegnati dal simbolo (*) sono obbligatori.</p>
+    <br>
+    <p style="display: inline; color: white;">-Il revisore sarà notificato, solo qunado verrà accettato sarà possibile visualizzarlo in Home.</p>
 
 
 </form>

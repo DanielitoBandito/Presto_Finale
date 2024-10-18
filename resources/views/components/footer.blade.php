@@ -9,3 +9,4 @@
     <h5>©2024 GARD.it | Privacy Policy</h5>
 
 </footer>
+

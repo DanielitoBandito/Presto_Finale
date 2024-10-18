@@ -1,7 +1,7 @@
 <x-layout>
 
     <div class="home-background">
-        <div class="content">
+        <div class="col-12 col-md-8 mx-auto">
             @auth
                 <div class="my-5 text-center">
                     <div class="container">
@@ -12,7 +12,7 @@
         
     
         
-            <div class="row height-custom justify-content-center align-items-center py-5 mx-4">
+            <div class="row height-custom justify-content-center align-items-center py-3 mx-4">
                 @forelse ($articles as $article)
                     <div class="col-12 col-md-4">
                         <x-card :article="$article" />

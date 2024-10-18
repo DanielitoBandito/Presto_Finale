@@ -14,7 +14,7 @@
     <x-header />
 
     <div class="body wrapper d-flex flex-column min-vh-100">
-        {{ $slot }}
+       {{ $slot }}
     </div>
 
 

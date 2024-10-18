@@ -13,7 +13,7 @@
                     <x-card :article="$article" />
                 </div>
             @empty
-                <div class="col-12">
+                <div class="col-12 col-md-8">
                     <h3 class="text-center">
                         Non sono ancora stati revisionati articoli
                     </h3>

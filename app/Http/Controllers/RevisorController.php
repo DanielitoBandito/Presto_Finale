@@ -6,10 +6,10 @@ use App\Models\User;
 use App\Models\Article;
 use App\Mail\BecomeRevisor;
 use Illuminate\Http\Request;
+use App\Models\ArticleAction;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Artisan;
-use App\Models\ArticleAction;
 
 class RevisorController extends Controller
 {
@@ -42,27 +42,10 @@ class RevisorController extends Controller
         ]);
     }
 
-    public function undoLastAction(){
-        $lastAction = ArticleAction::orderBy('created_at', 'desc')->first();
+    public function undoLastAction(Article $article){
+        $article->setAccepted(null);
+        return redirect()->back();
 
-        if ($lastAction) {
-            $article = Article::find($lastAction->article_id);
-            if ($lastAction->action === 'accepted') {
-                $article->setAccepted(null); // Annulla l'accettazione
-                $message = "Hai annullato l'accettazione dell'articolo $article->title";
-            } else {
-                $article->setAccepted(null); // Annulla il rifiuto
-                $message = "Hai annullato il rifiuto dell'articolo $article->title";
-            }
-            $article->save();
-            $lastAction->delete(); // Rimuovi l'azione loggata
-
-            return redirect()
-                ->back()
-                ->with('message', $message);
-        }
-
-        return redirect()->back()->with('message', "Nessuna azione da annullare.");
     }
 
     public function table(){

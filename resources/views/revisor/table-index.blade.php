@@ -10,7 +10,17 @@
         <div class="row height-custom justify-content-center align item-center py-5">
             @forelse ($articles_checked as $article)
                 <div class="col-12 col-md-4">
-                    <x-card :article="$article" />
+                    <div class="article-card">
+                        <img src="/images/logo-color-edited.png" alt="Nome Articolo" class="article-image">
+                        <div class="article-details">
+                            <h2 class="article-name">{{ $article->title }}</h2>
+                            <p class="article-description text-truncate">{{ $article->description }}</p>
+                            <p class="article-price">€ {{ $article->price }}</p>
+                            <div class="article-buttons">
+                                <a href="{{route('revisor.undoLastAction', ['article' => $article->id])}}" class="detail-button">Annulla Revisione</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             @empty
                 <div class="col-12 col-md-8">

@@ -1,4 +1,4 @@
-<form class="form_art shadow p-3 " wire:submit="store" style="margin-bottom: 30px">
+<form class=" col-10 col-md-6 form_art shadow p-3 " wire:submit="store" style="margin-bottom: 30px">
 
     @if (session()->has('success'))
         <div class="alert alert-success text-center">

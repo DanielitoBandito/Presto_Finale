@@ -10,10 +10,12 @@
         </div>
     </div>
 
-    <div class="w-50 mx-auto d-flex justify-content-center ">
-        <div class="col-12 col-md-6 ">
+    <div class="container mx-auto d-flex align-items-center justify-content-center ">
+        <div class="row">
             <livewire:create-article-form />
         </div>
+        
+        
     </div>
 
 </x-layout>

@@ -1,14 +1,10 @@
-<form class="form_art shadow p-3 " wire:submit="store">
+<form class="form_art shadow p-3 " wire:submit="store" style="margin-bottom: 30px">
 
     @if (session()->has('success'))
         <div class="alert alert-success text-center">
             {{ session('success') }}!
         </div>
     @endif
-
-
-
-
 
     <div class="mb-3 form">
         <label for="title" class="article-add">
@@ -32,6 +28,7 @@
             <p class="error-message">{{ $message }}</p>
         @enderror
     </div>
+
     <div class="mb-3">
         <label for="" class="article-add">
             <p style="display: inline; color: red;">* </p>Prezzo:
@@ -42,6 +39,7 @@
             <p class="error-message">{{ $message }}</p>
         @enderror
     </div>
+
     <div class="mb-3">
         <label for="category" class="article-add">
             <p style="display: inline; color: red;">* </p>Categoria:
@@ -57,12 +55,13 @@
             <p class="error-message">{{ $message }}</p>
         @enderror
     </div>
+
     <div class="d-flex justify-content-center">
         <button type="submit" class="btn add_article_btn_fr w-100 mb-3">Crea</button>
     </div>
+
     <p style="display: inline; color: white;">- I campi contrassegnati dal simbolo (*) sono obbligatori.</p>
     <br>
-    <p style="display: inline; color: white;">-Il revisore sarà notificato, solo qunado verrà accettato sarà possibile visualizzarlo in Home.</p>
-
+    <p style="display: inline; color: white;">-Il revisore sarà notificato, solo quando verrà accettato sarà possibile visualizzarlo in Home.</p>
 
 </form>

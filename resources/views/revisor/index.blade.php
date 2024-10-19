@@ -57,19 +57,6 @@
                                         <button class="btn btn-success py-2 fw-bold">Accetta</button>
                                     </form>
                                 </div>
-                                
-                                
-
-                                @if (!is_null($article_to_check->is_accepted))
-                                    <!-- Se l'articolo è stato revisionato (accepted o rejected) -->
-                                    <form
-                                        action="{{ route('revisor.undoLastAction', ['article' => $article_to_check->id]) }}"
-                                        method="POST">
-                                        @csrf
-                                        @method('PATCH')
-                                        <button class="btn btn-warning">Annulla Revisione</button>
-                                    </form>
-                                @endif
                             </div>
                         </div>
                     </div>

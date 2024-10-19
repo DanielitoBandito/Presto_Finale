@@ -17,7 +17,11 @@
                             <p class="article-description text-truncate">{{ $article->description }}</p>
                             <p class="article-price">€ {{ $article->price }}</p>
                             <div class="article-buttons">
-                                <a href="{{route('revisor.undoLastAction', ['article' => $article->id])}}" class="detail-button">Annulla Revisione</a>
+                                @if ($article->user_id !== auth()->id())
+                                    <a href="{{route('revisor.undoLastAction', ['article' => $article->id])}}" class="detail-button">Annulla Revisione</a>                           
+                                @else
+                                    <p class="bg-danger text-white">La revisione del tuo articolo può essere annullata solo da un altro revisore</p>
+                                @endif
                             </div>
                         </div>
                     </div>

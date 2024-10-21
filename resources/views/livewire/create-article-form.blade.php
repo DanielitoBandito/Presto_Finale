@@ -16,7 +16,7 @@
             <p class="error-message">{{ $message }}</p>
         @enderror
     </div>
-    
+
     <div class="mb-3">
         <label for="description" class="article-add">
             <p style="display: inline; color: red;">* </p>Descrizione:
@@ -56,12 +56,54 @@
         @enderror
     </div>
 
+    <div class="row">
+
+        <div class="mb-3 col-md-6">
+            <input type="file" class="form-input-add shadow bg-body-secondary" wire:model.live="temporary_images"
+                multiple @error('temporary_images') is-invalid @enderror placeholder="Inserisci un'immagine">
+            @error('temporary_images.*')
+                <p class="error-message">{{ $message }}</p>
+            @enderror
+            @error('temporary_images')
+                <p class="error-message">{{ $message }}</p>
+            @enderror
+
+        </div>
+
+
+        @if (count($images) > 0)
+
+            <div class="col-12 col-md-6">
+                <p>Anteprima</p>
+                <div class="row border border-4 border-success rounded shadow py-4">
+                    @foreach ($images as $key => $image)
+                        <div class="col d-flex flex-column align-items-center my-3">
+                            <div class="img-preview mx-auto shadow rounded"
+                                style="background-image: url('{{ $image->temporaryUrl() }}');">
+                            </div>
+                            <button type="button" class="btn btn-danger"
+                                wire:click="removeImage({{ $key }})">X</button>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+
+        @endif
+    </div>
+
+
+
+
+
+
+
     <div class="d-flex justify-content-center">
         <button type="submit" class="btn add_article_btn_fr w-100 mb-3">Crea</button>
     </div>
 
     <p style="display: inline; color: white;">- I campi contrassegnati dal simbolo (*) sono obbligatori.</p>
     <br>
-    <p style="display: inline; color: white;">-Il revisore sarà notificato, solo quando verrà accettato sarà possibile visualizzarlo in Home.</p>
+    <p style="display: inline; color: white;">- Il revisore sarà notificato, solo quando verrà accettato sarà possibile
+        visualizzarlo in Home.</p>
 
 </form>

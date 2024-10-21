@@ -1,7 +1,7 @@
 <x-layout>
 
     <h1 style="text-align: center">Articoli da revisionare:</h1>
-    
+
     <div class="container-fluid pt-5">
         <div class="row">
             <div class="col-md-3">
@@ -26,11 +26,21 @@
                     <div class="row justify-content-center pt-5">
                         <div class="col-md-8">
                             <div class="row justify-content-center">
-                                @for ($i = 0; $i < 6; $i++)
-                                    <div class="col-6 col-md-4 mb-4 text-center">
-                                        <img class="img-fluid rounded shadow" src="#" alt="immagine segnaposto">
-                                    </div>
-                                @endfor
+                                @if ($article_to_check->images->count())
+                                    @foreach ($article_to_check->images as $key => $image)
+                                        <div class="col-6 col-md-4 mb-4">
+                                            <img src="{{ Storage::url($image->path) }}" class="img-fluid rounded shadow"
+                                                alt="Immagine {{ $key + 1 }} dell'articolo '{{ $article_to_check->title }}'">
+                                        </div>
+                                    @endforeach
+                                @else
+                                    @for ($i = 0; $i < 6; $i++)
+                                        <div class="col-6 col-md-4 mb-4 text-center">
+                                            <img src="/public/images/logo-color-edited.png"
+                                                class="img-fluid rounded shadow" alt="Immagine Segnaposto">
+                                        </div>
+                                    @endfor
+                                @endif
                             </div>
                         </div>
                         <div class="col-md-4 ps-4 d-flex flex-column justify-content-between">
@@ -44,14 +54,16 @@
                             </div>
                             <div class="d-flex container pb-4 justify-content-around">
                                 <div class="col-6 col-md-4">
-                                    <form action="{{ route('reject', ['article' => $article_to_check]) }}" method="POST">
+                                    <form action="{{ route('reject', ['article' => $article_to_check]) }}"
+                                        method="POST">
                                         @csrf
                                         @method('PATCH')
                                         <button class="btn btn-danger py-2 fw-bold">Rifiuta</button>
                                     </form>
                                 </div>
                                 <div class="col-6 col-md-4">
-                                    <form action="{{ route('accept', ['article' => $article_to_check]) }}" method="POST">
+                                    <form action="{{ route('accept', ['article' => $article_to_check]) }}"
+                                        method="POST">
                                         @csrf
                                         @method('PATCH')
                                         <button class="btn btn-success py-2 fw-bold">Accetta</button>
@@ -75,15 +87,16 @@
                     @if (session()->has('message'))
                         <div class="row justify-content-center">
                             <div class="col-12 text-center">
-                                <div class="alert alert-{{ session('status') }} fade show position-fixed top-3 start-50 translate-middle-x" role="alert" style="z-index: 1050;">
+                                <div class="alert alert-{{ session('status') }} fade show position-fixed top-3 start-50 translate-middle-x"
+                                    role="alert" style="z-index: 1050;">
                                     {{ session('message') }}
                                 </div>
                             </div>
-                        </div>  
+                        </div>
                     @endif
                 </div>
-                
-                
+
+
             </div>
 
             <div class="col">
@@ -107,12 +120,12 @@
 
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         let alert = document.querySelector('.alert');
         if (alert) {
             setTimeout(() => {
                 alert.classList.remove('show');
-            }, 2000); 
+            }, 2000);
         }
     });
- </script>
+</script>

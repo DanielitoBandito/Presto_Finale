@@ -401,6 +401,15 @@ footer {
 /* 
 NUOVO ARTICOLO */
 
+.img-preview{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+    
+}
+
 .article-add {
     color: white;
     font-size: 1.2rem;
@@ -483,12 +492,10 @@ NUOVO ARTICOLO */
     background-image: url('/public/images/home_image.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh; 
+    height: 100%; 
     color: white; 
 }
 
-
-  
 
 
 /* Stile generale per la card */

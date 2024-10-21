@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\RevisorController;
 
@@ -51,6 +52,9 @@ Route::get('/revisor/undo/{article}', [RevisorController::class, 'undoLastAction
 
 Route::get('/table/article', [RevisorController::class, 'Table'])
 ->name('table.index');
+
+Route::post('/lingua/{lang}', [PublicController::class, 'setLanguage'])
+->name('setLocale');
 
 
 

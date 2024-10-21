@@ -182,6 +182,7 @@ footer {
 .navbar {
     background-color: rgb(22, 66, 60);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
 }
 
 .btn-src {

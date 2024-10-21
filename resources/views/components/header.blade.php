@@ -8,10 +8,10 @@
 
 
         <div class="col-md-1 collapse navbar-collapse" id="navbarSupportedContent">
-            <li class="nav-item mx-auto"><a class="nav-link-cat" href="{{ route('article.index') }}">Tutti</a></li>
+            <li class="nav-item mx-auto"><a class="nav-link-cat" href="{{ route('article.index') }}">{{ __('ui.tutti')}}</a></li>
 
             <li class="nav-item dropdown">
-                <a href="#" class="nav-link-cat mx-auto" role="button" data-bs-toggle="dropdown">Categorie</a>
+                <a href="#" class="nav-link-cat mx-auto" role="button" data-bs-toggle="dropdown">{{__('ui.categorie')}}</a>
                 <ul class="dropdown-menu category">
 
                     @foreach ($categories as $category)
@@ -42,16 +42,24 @@
                 </div>
 
             </form>
+           
         </div>
+        <div>
+                
+            <x-_locale lang="it"/>
+            <x-_locale lang="en"/>
+            <x-_locale lang="es"/>
 
+        </div>
         <div class="col-md-1 p-0 mx-auto">
+          
             @if (!auth()->check())
                 <div class="btn-group" role="group" aria-label="Basic example">
                     <div class="col-5">
-                        <a href="/login" class="log-btn">ACCEDI</a>
+                        <a href="/login" class="log-btn"> {{__('ui.accedi')}}</a>
                     </div>
                     <div class="col-6">
-                        <a href="/register" class="btn-rg-hm">REGISTRATI</a>
+                        <a href="/register" class="btn-rg-hm" > {{__('ui.registrati')}}</a>
                     </div>
 
                 </div>

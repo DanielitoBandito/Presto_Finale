@@ -22,7 +22,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Accedi</h4>
+                        <h4> {{__('ui.accedi')}}</h4>
                     </div>
                     <div class="lg-card mx-auto p-4">
                         <form action="/login" method="post" style="max-width: 500px; margin: 0 auto;">

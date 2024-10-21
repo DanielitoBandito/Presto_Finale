@@ -11,8 +11,7 @@
         <div class="col -12 col-md-10">
             <div class="row height-custom justify-content-center align-item-center text-center">
                 <div class="col-12">
-                    <h1 class="display-1">
-                        Tutti gli articoli
+                    <h1 class="display-1"> {{ __('ui.Tutti gli articoli') }}
                     </h1>
                 </div>
             </div>
@@ -23,8 +22,7 @@
                 </div>
                 @empty
                 <div class="col-12">
-                    <h3 class="text-center">
-                        Non sono ancora stati creati articoli
+                    <h3 class="text-center" {{ __('ui.Non sono ancora stati creati articoli.')}}>
                     </h3>
                 </div>
                 @endforelse

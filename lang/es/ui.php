@@ -4,7 +4,7 @@ return
    'tutti' => 'todos',
    'cerca' => 'buscar',
    'categorie' => 'categorías',
-   'accedi' => 'niciar sesión',
+   'accedi' => 'identificate',
    'registrati' => 'registrarse',
    'Tutti gli articoli' => 'Todos los artículos',
    'categoria' => 'categoría',

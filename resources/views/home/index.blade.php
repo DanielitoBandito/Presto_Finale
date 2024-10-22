@@ -5,7 +5,7 @@
             @auth
                 <div class="my-5 text-center">
                     <div class="container">
-                        <a href="{{ route('article.create') }}" class="btn btn-lg add_article_btn">Inserisci Nuovo Articolo</a>
+                        <a href="{{ route('article.create') }}" class="btn btn-lg add_article_btn">{{ __('ui.Crea Nuovo Articolo') }}</a>
                     </div>
                 </div>
             @endauth
@@ -19,7 +19,7 @@
                     </div>
                 @empty
                     <div class="col-12">
-                        <h3 class="text-center">Non sono ancora stati creati articoli</h3>
+                        <h3 class="text-center">{{ __('ui.Non sono ancora stati creati articoli.') }}</h3>
                     </div>
                 @endforelse
         

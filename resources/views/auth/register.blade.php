@@ -22,13 +22,13 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4> {{__('ui.registrati')}} </h4>
+                        <h4> {{__('ui.Registrati')}} </h4>
                     </div>
                     <div class="card-body">
                         <form action="/register" method="post">
                             @csrf
                             <div class="form-group">
-                                <label for="name">Nome</label>
+                                <label for="name">{{ __('ui.Nome') }}</label>
                                 <input type="text" name="name" id="name" class="form-input-rg"
                                     value="{{ old('name') }}" placeholder="Es. Mario Rossi">
                                 @error('name')
@@ -45,7 +45,7 @@
             
                             </div>
                             <div class="form-group">
-                                <label for="password">Password</label>
+                                <label for="password">{{ __('ui.Password') }}</label>
                                 <input type="password" name="password" id="password" class="form-input-rg"
                                     placeholder="Inserisci una password">
                                 @error('password')
@@ -54,7 +54,7 @@
             
                             </div>
                             <div class="form-group">
-                                <label for="password_confirmation">Conferma Password</label>
+                                <label for="password_confirmation">{{ __('ui.Conferma Password') }}</label>
                                 <input type="password" name="password_confirmation" id="password_confirmation"
                                     class="form-input-rg" placeholder="Conferma la tua password">
                                 @error('password_confirmation')
@@ -63,7 +63,7 @@
             
                             </div>
                             <div class="form-group mt-4 text-center">
-                                <input type="submit" value="Registrati" class="btn btn-rg">
+                                <input type="submit" value="{{ __('ui.Registrati') }}" class="btn btn-rg">
                             </div>
                         </form>
                     </div>

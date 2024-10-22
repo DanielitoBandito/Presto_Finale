@@ -17,8 +17,7 @@
                     @foreach ($categories as $category)
                     <li>
                         <a class="nav-link-list text-capitalize"
-                            href="{{ route('byCategory', ['category' => $category]) }}">{{ $category->name }}
-                        </a>
+                            href="{{ route('byCategory', ['category' => $category]) }}"> {{__("ui.$category->name")}} </a>
                     </li>
                     @if (!$loop->last)
                     <hr class="dropdown-divider">
@@ -31,7 +30,7 @@
             <form class="col-md-9  d-flex mx-auto align-items-center justify-content-center" role="search"
                 action="{{ route('article.search') }}" method="GET">
                 <div class="input-group">
-                    <input name="query" class="form-search" type="search" placeholder="Cerca" aria-label="Search">
+                    <input name="query" class="form-search" type="search" placeholder="{{ __('ui.Cerca') }}" aria-label="Search">
                     <button class="btn btn-src" type="submit">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor"
                             class="bi bi-search" viewBox="0 0 16 18">
@@ -60,6 +59,7 @@
         <div class="col-md-1 p-0 mx-auto">
 
             @if (!auth()->check())
+<<<<<<< HEAD
             <div class="container align-items-center text-center" role="group" aria-label="Basic example">
                 <div class="row justify-content-center align-items-center w-100">
                     <div class="col-md-6 text-capitalize w-100">
@@ -67,12 +67,21 @@
                     </div>
                     <div class="col-md-8 text-capitalize w-100">
                         <a href="/register" class="btn-rg-hm"> {{__('ui.registrati')}}</a>
+=======
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <div class="col-5">
+                        <a href="/login" class="log-btn"> {{__('ui.Accedi')}}</a>
+                    </div>
+                    <div class="col-6">
+                        <a href="/register" class="btn-rg-hm" > {{__('ui.Registrati')}}</a>
+>>>>>>> 034cf342ca2491faa772b178b0ac22a373483117
                     </div>
                 </div>
 
 
             </div>
             @else
+<<<<<<< HEAD
             <div class="btn-group dropdown button m-1">
                 <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
@@ -97,6 +106,32 @@
                     </li>
                 </ul>
             </div>
+=======
+                <div class="btn-group dropdown button m-1">
+                    <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        {{ __('ui.Ciao')}}, {{ Auth::user()->name }}
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="{{ route('article.create') }}">{{ __('ui.Crea Articolo') }}</a>
+                        </li>
+                        @if (Auth::user()->is_revisor == true)
+                            <li>
+                                <a class="dropdown-item" href="{{ route('revisor.index') }}">{{ __('ui.Revisore') }}
+                                    <span class="badge rounded-pill bg-danger">
+                                        {{ \App\Models\Article::toBeRevisedCount() }}</span></a>
+                            </li>
+                        @endif
+                        <li>
+                            <a class="dropdown-item text-danger" href="#"
+                                onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">{{ __('ui.Logout') }}</a>
+                            <form action="{{ route('logout') }}" method="post" class="d-none" id="form-logout">
+                                @csrf</form>
+                        </li>
+                    </ul>
+                </div>
+>>>>>>> 034cf342ca2491faa772b178b0ac22a373483117
             @endif
         </div>
 

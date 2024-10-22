@@ -22,7 +22,7 @@
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4> {{__('ui.accedi')}}</h4>
+                        <h4> {{__('ui.Accedi')}}</h4>
                     </div>
                     <div class="lg-card mx-auto p-4">
                         <form action="/login" method="post" style="max-width: 500px; margin: 0 auto;">
@@ -43,7 +43,7 @@
                             @enderror
 
                             <div class="form-group mt-2 text-center">
-                                <input type="submit" value="Accedi" class="btn btn-rg" style="margin-top: 10px">
+                                <input type="submit" value="{{ __('ui.Accedi') }}" class="btn btn-rg" style="margin-top: 10px">
                             </div>
                         </form>
                     </div>

@@ -3,8 +3,8 @@
     <div class="container">
         <div class="row py-5 justify-content-center align-items-center text-center">
             <div class="col-12 pt-5">
-                <h1 class="display-2 "> {{ __('ui.categoria') }}
-            : <span class="text-capitalize">{{ $category->name }}</span>
+                <h1 class="display-2 "> {{ __('ui.Categoria') }}
+            : <span class="text-capitalize">{{__("ui.$category->name")}}</span>
                 </h1>
             </div>
         </div>
@@ -21,7 +21,7 @@
                     </h3>
 
                     @auth
-                        <a href="{{ route('article.create') }}" class="btn btn-dark my-5"> {{__('ui.crea nuovo articolo') }}</a>
+                        <a href="{{ route('article.create') }}" class="btn btn-dark my-5"> {{__('ui.Crea Nuovo Articolo') }}</a>
                     @endauth
                 </div>
             @endforelse

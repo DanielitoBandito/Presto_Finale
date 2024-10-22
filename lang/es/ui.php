@@ -38,6 +38,23 @@ return
 'Ecco i suoi dati' => 'Aquí están sus datos.',
 'Messaggio' => 'Mensaje',
 'se vuoi renderl* revisor, clicca qui' => 'Si quieres convertirlo en revisor, haz clic aquí.',
-'Rendi revisor' => 'Hacer revisor'
+'Rendi revisor' => 'Hacer revisor',
+'Articoli da revisionare' => 'Artículos para revisar',
+'Revisor dashboard' => 'Panel del revisor',
+'Articoli revisionati' => 'Artículos revisados',
+'Autore' => 'Autor',
+'Rifiuta' => 'Rechazar',
+'Accetta' => 'Aceptar',
+'Nessun articolo da revisionare' => 'No hay artículos para revisar',
+"Torna all'homepage" => 'Volver a la página de inicio',
+'Lavora con Noi!' => '¡Trabaja con nosotros!',
+'Perchè vuoi diventare Revisor?' => '¿Por qué quieres convertirte en revisor?',
+'Invia!' => '¡Enviar!',
+'I campi contrassegnati dal simbolo (*) sono obbligatori' => 'Los campos marcados con el símbolo (*) son obligatorios.',
+'Articoli revisionati' => 'Artículos revisados',
+"L'articolo in precedenza revisionato è stato accettato" => "El artículo previamente revisado ha sido aceptado.",
+"L'articolo in precedenza revisionato è stato rifiutato" => "El artículo previamente revisado ha sido rechazado.",
+"Annulla Revisione" => "Cancelar revisión",
+"Non sono ancora stati revisionati articoli" => "Aún no se han revisado artículos."
 
 ];

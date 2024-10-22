@@ -3,7 +3,7 @@
         <div class="row height-custom justify-content-center align-item-center text-center">
             <div class="col-12">
                 <h1 class="display-1">
-                    Articoli revisionati
+                    {{__('ui.Articoli revisionati')}}
                 </h1>
             </div>
         </div>
@@ -18,12 +18,12 @@
                                 <p class="article-description text-truncate">{{ $article->description }}</p>
                                 <p class="article-price">€ {{ $article->price }}</p>
                                 @if ($article->is_accepted == true)
-                                    <p class="text-success">L'articolo in precedenza revisionato è stato accettato</p>
+                                    <p class="text-success">{{__("ui.L'articolo in precedenza revisionato è stato accettato")}}</p>
                                 @else
-                                    <p class="text-danger">L'articolo in precedenza revisionato è stato rifiutato</p>
+                                    <p class="text-danger">{{__("ui.L'articolo in precedenza revisionato è stato rifiutato")}}</p>
                                 @endif
                                 <div class="article-buttons">
-                                    <a href="{{route('revisor.undoLastAction', ['article' => $article->id])}}" class="detail-button">Annulla Revisione</a>                           
+                                    <a href="{{route('revisor.undoLastAction', ['article' => $article->id])}}" class="detail-button">{{__('ui.Annulla Revisione')}}</a>                           
                                 </div>
                             </div>
                         </div>
@@ -32,7 +32,7 @@
             @empty
                 <div class="col-12 col-md-8">
                     <h3 class="text-center">
-                        Non sono ancora stati revisionati articoli
+                        {{__('ui.Non sono ancora stati revisionati articoli')}}
                     </h3>
                 </div>
             @endforelse

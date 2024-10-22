@@ -39,7 +39,22 @@
 'Ecco i suoi dati' => 'Here are their details',
 'Messaggio' => 'Message',
 'se vuoi renderl* revisor, clicca qui' => 'If you want to make them a reviewer, click here',
-'Rendi revisor' => 'Make Reviewer'
-
-
+'Rendi revisor' => 'Make Reviewer',
+'Articoli da revisionare' => 'Articles to review',
+'Revisor dashboard' => 'Reviewer dashboard',
+'Articoli revisionati' => 'Reviewed articles',
+'Autore' => 'Author',
+'Rifiuta' => 'Reject',
+'Accetta' => 'Accept',
+'Nessun articolo da revisionare' => 'No articles to review',
+"Torna all'homepage" => "Return to homepage",
+'Lavora con Noi!' => 'Work with us!',
+'Perchè vuoi diventare Revisor?' => 'Why do you want to become a Reviewer?',
+'Invia!' => 'Submit!',
+'I campi contrassegnati dal simbolo (*) sono obbligatori' => 'Fields marked with an asterisk (*) are mandatory.',
+'Articoli revisionati' => 'Reviewed articles',
+"L'articolo in precedenza revisionato è stato accettato" => "The previously reviewed article has been accepted.",
+"L'articolo in precedenza revisionato è stato rifiutato" => "The previously reviewed article has been rejected.",
+"Annulla Revisione" => "Cancel review",
+"Non sono ancora stati revisionati articoli" => "No articles have been reviewed yet."
  ];

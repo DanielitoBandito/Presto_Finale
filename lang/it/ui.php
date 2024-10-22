@@ -38,7 +38,24 @@ return
 'Ecco i suoi dati' => 'Ecco i suoi dati.',
 'Messaggio' => 'Messaggio',
 'se vuoi renderl* revisor, clicca qui' => 'Se vuoi renderlo revisor, clicca qui.',
-'Rendi revisor' => 'Rendi revisor'
+'Rendi revisor' => 'Rendi revisor',
+'Articoli da revisionare' => 'Articoli da revisionare',
+'Revisor dashboard' => 'Revisor dashboard',
+'Articoli revisionati' => 'Articoli revisionati',
+'Autore' => 'Autore',
+'Rifiuta' => 'Rifiuta',
+'Accetta' => 'Accetta',
+'Nessun articolo da revisionare' => 'Nessun articolo da revisionare',
+"Torna all'homepage" => "Torna all'homepage",
+'Lavora con Noi!' => 'Lavora con Noi!',
+'Perchè vuoi diventare Revisor?' => 'Perchè vuoi diventare Revisor?',
+'Invia!' => 'Invia!',
+'I campi contrassegnati dal simbolo (*) sono obbligatori' => 'I campi contrassegnati dal simbolo (*) sono obbligatori',
+'Articoli revisionati' => 'Articoli revisionati',
+"L'articolo in precedenza revisionato è stato accettato" => "L'articolo in precedenza revisionato è stato accettato",
+"L'articolo in precedenza revisionato è stato rifiutato" => "L'articolo in precedenza revisionato è stato rifiutato",
+"Annulla Revisione" => "Annulla Revisione",
+"Non sono ancora stati revisionati articoli" => "Non sono ancora stati revisionati articoli"
 
 
 ];

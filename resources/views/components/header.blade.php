@@ -8,10 +8,10 @@
 
 
         <div class="col-md-1 collapse navbar-collapse" id="navbarSupportedContent">
-            <li class="nav-item mx-auto"><a class="nav-link-cat text-capitalize" href="{{ route('article.index') }}">{{ __('ui.tutti')}}</a></li>
+            <li class="nav-item mx-auto"><a class="nav-link-cat text-capitalize" href="{{ route('article.index') }}">{{ __('ui.Tutti')}}</a></li>
 
             <li class="nav-item dropdown">
-                <a href="#" class="nav-link-cat mx-auto text-capitalize" role="button" data-bs-toggle="dropdown">{{__('ui.categorie')}}</a>
+                <a href="#" class="nav-link-cat mx-auto text-capitalize" role="button" data-bs-toggle="dropdown">{{__('ui.Categorie')}}</a>
                 <ul class="dropdown-menu category">
 
                     @foreach ($categories as $category)
@@ -59,54 +59,19 @@
         <div class="col-md-1 p-0 mx-auto">
 
             @if (!auth()->check())
-<<<<<<< HEAD
             <div class="container align-items-center text-center" role="group" aria-label="Basic example">
                 <div class="row justify-content-center align-items-center w-100">
                     <div class="col-md-6 text-capitalize w-100">
-                        <a href="/login" class="log-btn"> {{__('ui.accedi')}}</a>
-                    </div>
-                    <div class="col-md-8 text-capitalize w-100">
-                        <a href="/register" class="btn-rg-hm"> {{__('ui.registrati')}}</a>
-=======
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <div class="col-5">
                         <a href="/login" class="log-btn"> {{__('ui.Accedi')}}</a>
                     </div>
-                    <div class="col-6">
-                        <a href="/register" class="btn-rg-hm" > {{__('ui.Registrati')}}</a>
->>>>>>> 034cf342ca2491faa772b178b0ac22a373483117
+                    <div class="col-md-8 text-capitalize w-100">
+                        <a href="/register" class="btn-rg-hm"> {{__('ui.Registrati')}}</a>
                     </div>
                 </div>
 
 
             </div>
             @else
-<<<<<<< HEAD
-            <div class="btn-group dropdown button m-1">
-                <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Ciao, {{ Auth::user()->name }}
-                </a>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a class="dropdown-item" href="{{ route('article.create') }}">Crea articolo</a>
-                    </li>
-                    @if (Auth::user()->is_revisor == true)
-                    <li>
-                        <a class="dropdown-item" href="{{ route('revisor.index') }}">Revisore
-                            <span class="badge rounded-pill bg-danger">
-                                {{ \App\Models\Article::toBeRevisedCount() }}</span></a>
-                    </li>
-                    @endif
-                    <li>
-                        <a class="dropdown-item text-danger" href="#"
-                            onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">Logout</a>
-                        <form action="{{ route('logout') }}" method="post" class="d-none" id="form-logout">
-                            @csrf</form>
-                    </li>
-                </ul>
-            </div>
-=======
                 <div class="btn-group dropdown button m-1">
                     <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
@@ -127,11 +92,11 @@
                             <a class="dropdown-item text-danger" href="#"
                                 onclick="event.preventDefault(); document.querySelector('#form-logout').submit();">{{ __('ui.Logout') }}</a>
                             <form action="{{ route('logout') }}" method="post" class="d-none" id="form-logout">
-                                @csrf</form>
+                                @csrf
+                            </form>
                         </li>
                     </ul>
                 </div>
->>>>>>> 034cf342ca2491faa772b178b0ac22a373483117
             @endif
         </div>
 

@@ -8,7 +8,7 @@
 
     <div class="mb-3 form">
         <label for="title" class="article-add">
-            <p style="display: inline; color: red;">* </p>Titolo:
+            <p style="display: inline; color: red;">* </p>{{ __('ui.Titolo')}}:
         </label>
         <input type="text" class="form-input-add @error('title') is-invalid @enderror" id="title"
             wire:model.blur="title" placeholder="Inserisci il titolo (min 5 caratteri)">
@@ -19,7 +19,7 @@
 
     <div class="mb-3">
         <label for="description" class="article-add">
-            <p style="display: inline; color: red;">* </p>Descrizione:
+            <p style="display: inline; color: red;">* </p>{{ __('ui.Descrizione') }}:
         </label>
         <textarea id="description" cols="20" rows="6"
             class="form-input-add @error('description') is-invalid @enderror" wire:model.blur="description"
@@ -31,7 +31,7 @@
 
     <div class="mb-3">
         <label for="" class="article-add">
-            <p style="display: inline; color: red;">* </p>Prezzo:
+            <p style="display: inline; color: red;">* </p>{{ __('ui.Prezzo')}}:
         </label>
         <input type="number" step="0.1" class="form-input-add @error('price') is-invalid @enderror" id="price"
             wire:model.blur='price' placeholder="Inserisci il prezzo">
@@ -42,13 +42,13 @@
 
     <div class="mb-3">
         <label for="category" class="article-add">
-            <p style="display: inline; color: red;">* </p>Categoria:
+            <p style="display: inline; color: red;">* </p>{{ __('ui.Categoria') }}:
         </label>
         <select id="category" wire:model.blur="category"
             class="fs-5 form-input-add @error('category') is-invalid @enderror">
-            <option value="" label>Seleziona una categoria:</option>
+            <option value="" label>{{ __('ui.Seleziona una categoria')}}:</option>
             @foreach ($categories as $category)
-                <option value="{{ $category->id }}">{{ $category->name }}</option>
+                <option value="{{ $category->id }}">{{__("ui.$category->name")}}</option>
             @endforeach
         </select>
         @error('category')

@@ -1,5 +1,5 @@
 <div class="row mw-100">
-    <div class="col-md-4">
+    <div class="col-md-6 p-4">
         <form class=" col-10 col-md-6 form_art p-3" wire:submit="store">
 
 
@@ -76,7 +76,7 @@
                 @enderror
 
             </div>
-            
+
 
 
 
@@ -85,9 +85,9 @@
                 <button type="submit" class="btn add_article_btn_fr w-100 mb-3">Crea</button>
             </div>
 
-            <p style="display: inline; color: black;" >- I campi contrassegnati dal simbolo (*) sono obbligatori.</p>
+            <p style="display: inline; color: black; font-weight: bold">- I campi contrassegnati dal simbolo (*) sono obbligatori.</p>
             <br>
-            <p style="display: inline; color: black;">- Il revisore sarà notificato, solo quando verrà accettato sarà
+            <p style="display: inline; color: black; font-weight: bold">- Il revisore sarà notificato, solo quando verrà accettato sarà
                 possibile
                 visualizzarlo in Home.</p>
 
@@ -102,30 +102,34 @@
 
     </div>
 
-    <div class="col-md-7">
-        <div class="row justify-content-center align-item-center text-center my-2 p-0">
-            <h3 class="text-center my-2">{{__('ui.Gestisci le immagini')}}</h3>
+    <div class="col-md-5 p-3">
+        <div class="row justify-content-center align-items-center text-center my-2 p-0">
+            <h3 class="text-center my-2">{{ __('ui.Gestisci le immagini') }}</h3>
         </div>
-        @if (count($images) > 0)
-
-            <div class="col-12 col-md-12 my-3 mx-auto">
-                <div class="row justify-content-start">
-                    @foreach ($images as $key => $image)
-                        <div class="col-12 wrap my-3 shadow py-4 px-1 rounded">
-                            <div class="img-preview shadow rounded"
-                                style="background-image: url('{{ $image->temporaryUrl() }}');">
-                            </div>
-                            <button type="button" class="btn btn-danger mt-2"
-                                wire:click="removeImage({{ $key }})">X</button>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-
-        @endif
-    </div>
-
-
     
+        <div class="image-container border rounded p-3" style="box-shadow: #28b8b6d0 0px 5px 10px; background-color: #c9c9c993;">
+            @if (count($images) > 0)
+                <div class="col-12 my-3 mx-auto">
+                    <div class="row justify-content-center">
+                        @foreach ($images as $key => $image)
+                            <div class="col-12 wrap my-2 shadow py-4 rounded">
+                                <div class="img-preview shadow rounded"
+                                    style="background-image: url('{{ $image->temporaryUrl() }}');">
+                                </div>
+                                <button type="button" class="btn btn-danger mt-2"
+                                    wire:click="removeImage({{ $key }})">X</button>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            @else
+                <p class="text-center text-muted my-4" style="color: white">Le immagini saranno visualizzate qui</p>
+            @endif
+        </div>
+    </div>
+    
+
+
+
 
 </div>

@@ -1,14 +1,61 @@
 <x-layout>
 
-    <div class="col-12 col-md-8 mx-auto">
-        @auth
-            <div class="my-5 text-center">
-                <div class="container">
-                    <a href="{{ route('article.create') }}"
-                        class="btn btn-lg add_article_btn">{{ __('ui.Crea Nuovo Articolo') }}</a>
+    <div class="container col-12 col-md-12">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                
+                <!-- Prima immagine -->
+                <div class="carousel-item active ">
+                    <img src="images/download.jpg" class="d-block w-100" alt="Immagine 1" style="object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block " style="background-color: rgba(0, 0, 0, 0.747);">
+                        <h5>Benvenuti nel nostro sito</h5>
+                        <p>Scopri di più sui nostri prodotti e servizi</p>
+                    </div>
+                    <x-add_article />
+                </div>
+
+                <!-- Seconda immagine -->
+                <div class="carousel-item ">
+                    <img src="images\flat-lay-clothing-photos_3414.webp" class="d-block w-100" alt="Immagine 2"
+                        style="object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.747);">
+                        <h5>Innovazione e Qualità</h5>
+                        <p>Offriamo soluzioni moderne per le tue esigenze</p>
+                    </div>
+                    <x-add_article />
+                </div>
+
+                <!-- Terza immagine -->
+                <div class="carousel-item ">
+                    <img src="images\digital-marketing-for-luxury-brands-scaled.jpg" class="d-block w-100"
+                        alt="Immagine 3" style="object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.747);">
+                        <h5>Contattaci oggi</h5>
+                        <p>Unisciti alla nostra community</p>
+                    </div>
+                    <x-add_article />
                 </div>
             </div>
-        @endauth
+
+            <!-- Controlli del carosello -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <div class="col-12 col-md-8 mx-auto">
+
+
+
+
 
 
 

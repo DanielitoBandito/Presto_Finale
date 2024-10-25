@@ -1,7 +1,7 @@
 <?php
 return 
 [
-  'Tutti' => 'Tutti',
+  'Naviga' => 'Naviga',
 'Cerca' => 'Cerca',
 'Categorie' => 'Categorie',
 'Accedi' => 'Accedi',

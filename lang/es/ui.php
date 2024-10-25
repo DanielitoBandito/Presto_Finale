@@ -1,7 +1,7 @@
 <?php
 return 
 [
- 'Tutti' => 'Todos',
+ 'Naviga' => 'Descubra',
 'Cerca' => 'Buscar',
 'Categorie' => 'Categorías',
 'Accedi' => 'Identificate',

@@ -8,7 +8,7 @@
 
 
         <div class="col-md-1 collapse navbar-collapse" id="navbarSupportedContent">
-            <li class="nav-item mx-auto"><a class="nav-link-cat text-capitalize" href="{{ route('article.index') }}">{{ __('ui.Tutti')}}</a></li>
+            <li class="nav-item mx-auto"><a class="nav-link-cat text-capitalize" href="{{ route('article.index') }}">{{ __('ui.Naviga')}}</a></li>
 
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link-cat mx-auto text-capitalize" role="button" data-bs-toggle="dropdown">{{__('ui.Categorie')}}</a>

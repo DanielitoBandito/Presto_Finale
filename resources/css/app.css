@@ -365,18 +365,6 @@ footer {
     height: 80%;
 }
 
-.t-card-art {
-    color: white;
-}
-
-.p-card-art {
-    color: white;
-}
-
-.d-card-art {
-    color: white;
-}
-
 
 
 
@@ -449,6 +437,15 @@ footer {
     border-left: 2px solid #807c7c;
     opacity: 0.5;
     min-height: 100%;
+    display: block;
+    align-items: center;
+}
+
+.divider-vert {
+    margin-top: 2%;
+    border-top: 2px solid #807c7c;
+    opacity: 0.5;
+    min-width: 100%;
     display: block;
     align-items: center;
 }
@@ -668,6 +665,10 @@ footer {
     border: none;
 }
 
+
+.title_show{
+    height: 33%;
+}
 
 
 

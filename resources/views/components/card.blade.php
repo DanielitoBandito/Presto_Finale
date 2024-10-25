@@ -1,6 +1,6 @@
 <div class="article-card">
     <img src="{{ $article->images->count() > 0 ? $article->images->first()->getUrl(300, 300) : '/images/logo-color-edited.png' }}"
-        alt="Immagine dell'articolo {{ $article->title }}" class="card-img-top img-fluid" style="height: 200px; object-fit: contain;">
+        alt="Immagine dell'articolo {{ $article->title }}" class="card-img-top img-fluid" style="height: 300px; object-fit: contain;">
     <div class="article-details">
         <h2 class="article-name">{{ $article->title }}</h2>
         <p class="article-description text-truncate">{{ $article->description }}</p>

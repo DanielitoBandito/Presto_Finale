@@ -21,7 +21,7 @@
 'Cosmetici' => 'Beauty',
 'Non sono ancora stati creati articoli.' => 'No articles have been created yet.',
 'Crea Nuovo Articolo' => 'Create New Article',
-'Risultati per la ricerca' => 'Search Results',
+'Risultati per la Ricerca' => 'Search Results',
 'Nessun articolo corrisponde alla tua ricerca.' => 'No articles match your search.',
 'Titolo' => 'Title',
 'Prezzo' => 'Price',

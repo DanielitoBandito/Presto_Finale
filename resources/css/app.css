@@ -203,7 +203,7 @@ footer {
 
 .btn-rg-hm {
     display: inline-block;
-    width: auto;
+    width: 100%;
     background-color: rgb(106, 156, 137);
     color: black;
     height: auto;
@@ -226,9 +226,8 @@ footer {
 .log-btn {
     color: rgb(255, 255, 255);
     font-size: 1rem;
-    margin-right: 2px;
     text-decoration: none;
-    line-height: 40px;
+    line-height: 20px;
 }
 
 .log-btn:hover {

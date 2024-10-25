@@ -65,11 +65,11 @@
 
             @if (!auth()->check())
             <div class="container align-items-center text-center" role="group" aria-label="Basic example">
-                <div class="row justify-content-center align-items-center w-100">
-                    <div class="col-md-6 text-capitalize w-100">
+                <div class="col-md-12 justify-content-center align-items-center w-100">
+                    <div class="mb-1 text-capitalize ">
                         <a href="/login" class="log-btn"> {{__('ui.Accedi')}}</a>
                     </div>
-                    <div class="col-md-8 text-capitalize w-100">
+                    <div class="mb-1 text-capitalize ">
                         <a href="/register" class="btn-rg-hm"> {{__('ui.Registrati')}}</a>
                     </div>
                 </div>

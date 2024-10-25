@@ -36,7 +36,7 @@
         </div>
 
         <!-- Carosello Immagini -->
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 mt-3 mt-md-0">
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     @foreach ($article->images as $key => $image)

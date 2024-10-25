@@ -56,5 +56,7 @@
 "L'articolo in precedenza revisionato è stato accettato" => "The previously reviewed article has been accepted.",
 "L'articolo in precedenza revisionato è stato rifiutato" => "The previously reviewed article has been rejected.",
 "Annulla Revisione" => "Cancel review",
-"Non sono ancora stati revisionati articoli" => "No articles have been reviewed yet."
+"Non sono ancora stati revisionati articoli" => "No articles have been reviewed yet.",
+"Aggiungi un nuovo articolo" => "Add a new article",
+"Gestisci le immagini" => "Manage images",
  ];

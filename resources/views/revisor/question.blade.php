@@ -17,14 +17,11 @@
 
         </div>
         @else
-        <form class="form_art shadow p-3 " method="POST" action="{{ route('become.revisor') }}">
-
+        <form class="col-md-6 shadow p-3 " method="POST" action="{{ route('become.revisor') }}">
             @csrf
-
-
             <div class="mb-3">
-                <label for="question" class="article-add">
-                    <p style="display: inline; color: red;">* </p>{{__('ui.Perchè vuoi diventare Revisor?')}}
+                <label for="question" class="p-2 fs-5">
+                    <p style="display: inline; color: red;">* </p style="color: black">{{__('ui.Perchè vuoi diventare Revisor?')}}
                 </label>
                 <textarea name="question" id="question" cols="15" rows="6"
                     class="form-input-add @error('question') is-invalid @enderror" placeholder="Domanda.."></textarea>

@@ -55,6 +55,8 @@ return
 "L'articolo in precedenza revisionato è stato accettato" => "El artículo previamente revisado ha sido aceptado.",
 "L'articolo in precedenza revisionato è stato rifiutato" => "El artículo previamente revisado ha sido rechazado.",
 "Annulla Revisione" => "Cancelar revisión",
-"Non sono ancora stati revisionati articoli" => "Aún no se han revisado artículos."
+"Non sono ancora stati revisionati articoli" => "Aún no se han revisado artículos.",
+"Aggiungi un nuovo articolo" => "Agregar un nuevo articulo",
+"Gestisci le immagini" => "Gestionar las imágenes",
 
 ];

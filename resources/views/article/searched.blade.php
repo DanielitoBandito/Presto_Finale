@@ -2,9 +2,9 @@
     <div class="container-fluid  ">
         <div class="row py-5 justify-content-center align-items-center text-center">
             <div class="col-12">
-                <h1 class="display-1"> {{ __('ui.Risultati per la Ricerca')}}
+                <h3 class="display-3"> {{ __('ui.Risultati per la Ricerca')}}
                  "<span class="fst-italic">{{ $query }}</span>"
-                </h1>
+                </h3>
             </div>
         </div>
         <div class="row height-custom justify-content-center align-items-center py-5">
@@ -14,8 +14,8 @@
                 </div>
             @empty
                 <div class="col-12">
-                    <h3 class="text-center" > {{ __('ui.Nessun articolo corrisponde alla tua ricerca.' )}}
-                    </h3>
+                    <h1 class="text-center" > {{ __('ui.Nessun articolo corrisponde alla tua ricerca.' )}}
+                    </h1>
                 </div>
             @endforelse
         </div>

@@ -2,6 +2,9 @@
     <div class="col-md-4">
         <form class=" col-10 col-md-6 form_art p-3" wire:submit="store">
 
+
+            <h3 class="text-center my-2">{{ __('ui.Aggiungi un nuovo articolo') }}</h3>
+
             @if (session()->has('success'))
                 <div class="alert alert-success text-center">
                     {{ session('success') }}!
@@ -73,7 +76,7 @@
                 @enderror
 
             </div>
-
+            
 
 
 
@@ -82,9 +85,9 @@
                 <button type="submit" class="btn add_article_btn_fr w-100 mb-3">Crea</button>
             </div>
 
-            <p style="display: inline; color: white;">- I campi contrassegnati dal simbolo (*) sono obbligatori.</p>
+            <p style="display: inline; color: black;" >- I campi contrassegnati dal simbolo (*) sono obbligatori.</p>
             <br>
-            <p style="display: inline; color: white;">- Il revisore sarà notificato, solo quando verrà accettato sarà
+            <p style="display: inline; color: black;">- Il revisore sarà notificato, solo quando verrà accettato sarà
                 possibile
                 visualizzarlo in Home.</p>
 
@@ -101,7 +104,7 @@
 
     <div class="col-md-7">
         <div class="row justify-content-center align-item-center text-center my-2 p-0">
-            <h1>Anteprima immagini</h1>
+            <h3 class="text-center my-2">{{__('ui.Gestisci le immagini')}}</h3>
         </div>
         @if (count($images) > 0)
 
@@ -121,4 +124,8 @@
 
         @endif
     </div>
+
+
+    
+
 </div>

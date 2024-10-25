@@ -20,7 +20,7 @@ return
 'Cosmetici' => 'Cosmetici',
 'Non sono ancora stati creati articoli.' => 'Non sono ancora stati creati articoli.',
 'Crea Nuovo Articolo' => 'Crea Nuovo Articolo',
-'Risultati per la ricerca' => 'Risultati per la ricerca',
+'Risultati per la Ricerca' => 'Risultati per la Ricerca',
 'Nessun articolo corrisponde alla tua ricerca.' => 'Nessun articolo corrisponde alla tua ricerca.',
 'Titolo' => 'Titolo',
 'Prezzo' => 'Prezzo',
@@ -55,7 +55,9 @@ return
 "L'articolo in precedenza revisionato è stato accettato" => "L'articolo in precedenza revisionato è stato accettato",
 "L'articolo in precedenza revisionato è stato rifiutato" => "L'articolo in precedenza revisionato è stato rifiutato",
 "Annulla Revisione" => "Annulla Revisione",
-"Non sono ancora stati revisionati articoli" => "Non sono ancora stati revisionati articoli"
+"Non sono ancora stati revisionati articoli" => "Non sono ancora stati revisionati articoli",
+"Aggiungi un nuovo articolo" => "Aggiungi un nuovo articolo",
+"Gestisci le immagini" => "Gestisci le immagini"
 
 
 ];

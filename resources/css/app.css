@@ -195,9 +195,9 @@ footer {
 }
 
 .btn-src:hover {
-    background-color: #28b8b6d0;
+    background-color: #29b8b5d0;
     color: rgb(0, 0, 0);
-    box-shadow: #28b8b6d0 0px 5px 10px;
+    box-shadow: rgba(41, 184, 181, 0.816) 0px 3px 6px, rgba(41, 184, 181, 0.816) 0px 3px 6px;
 }
 
 
@@ -482,14 +482,15 @@ footer {
 }
 
 .add_article_btn {
-    color: rgb(255, 255, 255);
-    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
-    background-color: #16423C;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    background-color: #29b8b5d0;
+    transition: all 0.5s;
 }
 
 .add_article_btn:hover {
-    background-color: rgb(106, 156, 137);
-    color: rgb(19, 19, 19);
+    background-color: #239c9ad0;
+    transform: translateY(-2px)
+    
 
 }
 

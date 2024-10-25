@@ -2,7 +2,7 @@
  
  return 
  [
-   'Tutti' => 'All',
+   'Naviga' => 'Discover',
 'Cerca' => 'Search',
 'Categorie' => 'Categories',
 'Accedi' => 'Log In',

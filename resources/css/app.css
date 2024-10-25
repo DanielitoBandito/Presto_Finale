@@ -391,8 +391,9 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60%;
-    width: 60%;
+    height: 80%;
+    width: 80%;
+    
 
 }
 
@@ -406,6 +407,7 @@ footer {
     height: 300px;
     width: 300px;
     margin: 1%;
+    background-color: #ffffff;
 }
 
 .add_image {
@@ -479,12 +481,13 @@ footer {
 
 .add_article_btn {
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    background-color: #29b8b5d0;
+    background-color: #29b8b6;
     transition: all 0.5s;
+    
 }
 
 .add_article_btn:hover {
-    background-color: #239c9ad0;
+    background-color: #239c9a;
     transform: translateY(-2px)
     
 
@@ -670,7 +673,15 @@ footer {
 }
 
 
+#heroCarousel .carousel-item {
+    height: 60vh; /* Altezza fissa per ogni immagine, in questo caso schermo intero */
+}
 
+#heroCarousel .carousel-item img {
+    width: 100%; /* L'immagine riempie tutta la larghezza */
+    height: 100%; /* L'immagine riempie tutta l'altezza */
+    object-fit: cover; /* Adatta l'immagine senza distorcerla */
+}
 
 
 @media (max-width: 768px) {

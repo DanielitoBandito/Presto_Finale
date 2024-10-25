@@ -31,7 +31,7 @@ return
 'Password' => 'Password',
 'Conferma Password' => 'Conferma Password',
 'Crea Articolo' => 'Crea Articolo',
-'Revisore' => 'Revisor',
+'Revisore' => 'Revisore',
 'Logout' => 'Logout',
 'Seleziona una categoria' => 'Seleziona una categoria',
 'Un utente ha chiesto di lavorare con noi' => 'Un utente ha chiesto di lavorare con noi.',

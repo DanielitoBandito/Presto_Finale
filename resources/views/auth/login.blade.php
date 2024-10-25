@@ -30,14 +30,14 @@
                                 <label for="email" class="form-label text-dark">Email</label>
                                 <input type="email" name="email" class="form-input-lg" placeholder="email" value="{{ old('email') }}">
                                 @error('email')
-                                    <p class="error-message text-danger small">{{ $message }}</p>
+                                    <p class="error-message  small">{{ $message }}</p>
                                 @enderror
                             </div>
                             <div class="form-group mb-3">
                                 <label for="password" class="form-label text-dark">Password</label>
                                 <input type="password" name="password" class="form-input-lg" placeholder="password">
                                 @error('password')
-                                    <p class="error-message text-danger small">{{ $message }}</p>
+                                    <p class="error-message  small">{{ $message }}</p>
                                 @enderror
                             </div>
                             <div class="text-center">

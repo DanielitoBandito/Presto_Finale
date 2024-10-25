@@ -184,7 +184,6 @@ footer {
 }
 
 .btn-src {
-    width: 5%;
     background-color: #6A9C89;
     color: black;
     height: 85%;
@@ -192,6 +191,7 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
     border-style: solid;
     transition: all 0.4s;
+    
 }
 
 .btn-src:hover {
@@ -199,6 +199,7 @@ footer {
     color: rgb(0, 0, 0);
     box-shadow: #28b8b6d0 0px 5px 10px;
 }
+
 
 .btn-rg-hm {
     display: inline-block;
@@ -262,11 +263,9 @@ footer {
 
 /* REGISTER */
 .card {
-    width: 30%;
     height: auto;
-    margin-left: 35%;
-    margin-top: 2%;
     border: none;
+    border-radius: 12px;
 
 }
 
@@ -387,16 +386,14 @@ footer {
     background-color: rgb(192, 106, 106);
     color: rgb(255, 255, 255);
     font-size: 15px;
-    padding: 12px;
+    padding: 6px;
     border-radius: 5px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    margin-top: -10px;
-    width: 80%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-bottom: 2px;
 }
 
 
@@ -536,9 +533,8 @@ footer {
     width: 20%;
     height: auto;
     border-radius: 6px;
-    margin-left: 40%;
-    margin-top: 5%;
     margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .home-background {

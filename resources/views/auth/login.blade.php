@@ -12,38 +12,36 @@
 <div class="home-background">
     <div class="container">
         <div class="row">
-            <div class="col-12" style="cursor: pointer">
-                <img src="{{ asset('images/logo-color-edited.png') }}" alt="" onclick="location.href='/'"
-                    class="custom-image-rg">
+            <div class="col-12 text-center mb-4" style="cursor: pointer;">
+                <img src="{{ asset('images/logo-color-edited.png') }}" alt="Logo" onclick="location.href='/'" class="img-fluid custom-image-rg">
             </div>
-
         </div>
-        <div class="row">
-            <div class="col-12">
+        
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
                 <div class="card">
-                    <div class="card-header">
-                        <h4> {{__('ui.Accedi')}}</h4>
+                    <div class="card-header text-center">
+                        <h4>{{ __('ui.Accedi') }}</h4>
                     </div>
-                    <div class="lg-card mx-auto p-4">
-                        <form action="/login" method="post" style="max-width: 500px; margin: 0 auto;">
+                    <div class="card-body">
+                        <form action="/login" method="post" class="px-4">
                             @csrf
-                            <label for="email" style="color: rgb(0, 0, 0);">Email</label>
-                            <input class="form-input-lg" style="margin-bottom: 10px, w-2rem" type="email"
-                                placeholder="email" name="email" value="{{ old('email') }}">
-
-                            @error('email')
-                                <p class="error-message">{{ $message }}</p>
-                            @enderror
-
-                            <label for="password" style="color: rgb(0, 0, 0);" class="mt-2">Password</label>
-                            <input class="form-input-lg" type="password" placeholder="password" name="password">
-
-                            @error('password')
-                                <p class="error-message">{{ $message }}</p>
-                            @enderror
-
-                            <div class="form-group mt-2 text-center">
-                                <input type="submit" value="{{ __('ui.Accedi') }}" class="btn btn-rg" style="margin-top: 10px">
+                            <div class="form-group mb-3">
+                                <label for="email" class="form-label text-dark">Email</label>
+                                <input type="email" name="email" class="form-input-lg" placeholder="email" value="{{ old('email') }}">
+                                @error('email')
+                                    <p class="error-message text-danger small">{{ $message }}</p>
+                                @enderror
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="password" class="form-label text-dark">Password</label>
+                                <input type="password" name="password" class="form-input-lg" placeholder="password">
+                                @error('password')
+                                    <p class="error-message text-danger small">{{ $message }}</p>
+                                @enderror
+                            </div>
+                            <div class="text-center">
+                                <input type="submit" value="{{ __('ui.Accedi') }}" class="btn btn-rg mt-3">
                             </div>
                         </form>
                     </div>
@@ -52,7 +50,6 @@
         </div>
     </div>
 </div>
-
 
 
 

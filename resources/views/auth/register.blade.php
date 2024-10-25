@@ -9,8 +9,8 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<div class="home-background">
-    <div class="container">
+<!-- <div class="home-background">
+    <div class="container w-100">
         <div class="row">
             <div class="col-12" style="cursor: pointer">
                 <img src="{{ asset('images/logo-color-edited.png') }}" alt="" onclick="location.href='/'"
@@ -18,8 +18,8 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-12">
+        <div class="row justify-content-center col-12">
+            <div>
                 <div class="card">
                     <div class="card-header">
                         <h4> {{__('ui.Registrati')}} </h4>
@@ -72,5 +72,60 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
+<div class="home-background">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <img src="{{ asset('images/logo-color-edited.png') }}" alt="Logo" onclick="location.href='/'" class="img-fluid custom-image-rg" style="cursor: pointer;">
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h4>{{ __('ui.Registrati') }}</h4>
+                    </div>
+                    <div class="card-body">
+                        <form action="/register" method="post">
+                            @csrf
+                            <div class="form-group mb-3">
+                                <label for="name">{{ __('ui.Nome') }}</label>
+                                <input type="text" name="name" id="name" class="form-control" value="{{ old('name') }}" placeholder="Es. Mario Rossi">
+                                @error('name')
+                                    <p class="error-message  small">{{ $message }}</p>
+                                @enderror
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="form-control" value="{{ old('email') }}" placeholder="Es. Mariorossi@gmail.com">
+                                @error('email')
+                                    <p class="error-message  small">{{ $message }}</p>
+                                @enderror
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="password">{{ __('ui.Password') }}</label>
+                                <input type="password" name="password" id="password" class="form-control" placeholder="Inserisci una password">
+                                @error('password')
+                                    <p class="error-message  small">{{ $message }}</p>
+                                @enderror
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="password_confirmation">{{ __('ui.Conferma Password') }}</label>
+                                <input type="password" name="password_confirmation" id="password_confirmation" class="form-control" placeholder="Conferma la tua password">
+                                @error('password_confirmation')
+                                    <p class="error-message  small">{{ $message }}</p>
+                                @enderror
+                            </div>
+                            <div class="text-center mt-4">
+                                <input type="submit" value="{{ __('ui.Registrati') }}" class="btn btn-rg">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

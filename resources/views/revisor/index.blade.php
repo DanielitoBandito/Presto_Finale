@@ -32,6 +32,18 @@
                                             <img src="{{ $image->getUrl(300, 300) }}" class="img-fluid rounded shadow"
                                                 alt="Immagine {{ $key + 1 }} dell'articolo '{{ $article_to_check->title }}'">
                                         </div>
+                                        <div class="col-md-5 ps-3">
+                                            <div class="card-body">
+                                                <h5>Labels</h5>
+                                            @if ($image->labels)
+                                                @foreach ($image->labels as $label)
+                                                    #{{ $label }},
+                                                @endforeach
+                                            @else
+                                                <p class="fst-italic">No labels</p>
+                                            @endif
+                                            </div>
+                                        </div>
                                         <div class="col-md-8 ps-3">
                                             <div class="card-body">
                                                 <h5 class="">Ratings</h5>

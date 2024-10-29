@@ -60,9 +60,6 @@ return
 "Gestisci le immagini" => "Gestisci le immagini",
 "Carrello" => "Carrello",
 "Quì potrai vedere i tuoi articoli" => "Quì potrai vedere i tuoi articoli",
-
-
-
 "Contattataci Oggi" => "Contattataci Oggi",
 "Unisciti alla nostra community!" => "Unisciti alla nostra community!",
 "Innovazione e Qualità" => "Innovazione e Qualità",

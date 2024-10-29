@@ -41,7 +41,7 @@
 'se vuoi renderl* revisor, clicca qui' => 'If you want to make them a reviewer, click here',
 'Rendi revisor' => 'Make Reviewer',
 'Articoli da revisionare' => 'Articles to review',
-'Revisor dashboard' => 'Reviewer dashboard',
+'Dashboard' => 'Reviewer Dashboard',
 'Articoli revisionati' => 'Reviewed articles',
 'Autore' => 'Author',
 'Rifiuta' => 'Reject',

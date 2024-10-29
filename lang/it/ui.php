@@ -40,7 +40,7 @@ return
 'se vuoi renderl* revisor, clicca qui' => 'Se vuoi renderlo revisor, clicca qui.',
 'Rendi revisor' => 'Rendi revisor',
 'Articoli da revisionare' => 'Articoli da revisionare',
-'Revisor dashboard' => 'Revisor dashboard',
+'Dashboard' => 'Dashboard',
 'Articoli revisionati' => 'Articoli revisionati',
 'Autore' => 'Autore',
 'Rifiuta' => 'Rifiuta',

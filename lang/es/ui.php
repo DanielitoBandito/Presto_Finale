@@ -40,7 +40,7 @@ return
 'se vuoi renderl* revisor, clicca qui' => 'Si quieres convertirlo en revisor, haz clic aquí.',
 'Rendi revisor' => 'Hacer revisor',
 'Articoli da revisionare' => 'Artículos para revisar',
-'Revisor dashboard' => 'Panel del revisor',
+'Dashboard' => 'Panel del Revisor',
 'Articoli revisionati' => 'Artículos revisados',
 'Autore' => 'Autor',
 'Rifiuta' => 'Rechazar',

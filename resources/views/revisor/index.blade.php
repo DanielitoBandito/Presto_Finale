@@ -1,12 +1,13 @@
 <x-layout>
 
-    <h1 style="text-align: center">{{__('ui.Dashboard')}}:</h1>
+   
 
     <div class=" row pt-3 mb-auto mx-auto w-100 col-12">
         <x-aside_rev></x->
 
-            <div class="col-md-9">
-                <div class="bg-body-secondary rounded p-4" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+            <div class="col-md-9 ">
+            <h1 style="text-align: center">{{__('ui.Dashboard')}}:</h1>
+                <div class="bg-body-secondary rounded p-4 mb-5" style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
 
                     @if (!$article_to_check)
                     <div class="row justify-content-center align-items-center text-center height-custom">

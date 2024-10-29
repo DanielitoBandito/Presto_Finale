@@ -1,4 +1,4 @@
-<div class="col-md-3">
+<div class="col-md-3 mt-3">
     <aside class="aside bg-body-secondary " style="box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
         <div class="col-md-3 w-100">
             <div class="art-rev position-relative w-100" style="display: inline-block;">

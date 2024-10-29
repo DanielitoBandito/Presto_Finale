@@ -57,7 +57,18 @@ return
 "Annulla Revisione" => "Annulla Revisione",
 "Non sono ancora stati revisionati articoli" => "Non sono ancora stati revisionati articoli",
 "Aggiungi un nuovo articolo" => "Aggiungi un nuovo articolo",
-"Gestisci le immagini" => "Gestisci le immagini"
+"Gestisci le immagini" => "Gestisci le immagini",
+"Carrello" => "Carrello",
+"Quì potrai vedere i tuoi articoli" => "Quì potrai vedere i tuoi articoli",
+
+
+
+"Contattataci Oggi" => "Contattataci Oggi",
+"Unisciti alla nostra community!" => "Unisciti alla nostra community!",
+"Innovazione e Qualità" => "Innovazione e Qualità",
+"Offriamo soluzioni moderne per le tue esigenze" => "Offriamo soluzioni moderne per le tue esigenze",
+"Scopri di più sui nostri prodotti e servizi" => "Scopri di più sui nostri prodotti e servizi",
+"Benvenuti nel nostro sito" => "Benvenuti nel nostro sito",
 
 
 ];

@@ -3,15 +3,15 @@
     <div class="container col-12 col-md-12">
         <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
-                
+
                 <!-- Prima immagine -->
                 <div class="carousel-item active ">
                     <img src="images/download.jpg" class="d-block w-100" alt="Immagine 1" style="object-fit: cover;">
                     <div class="carousel-caption d-none d-md-block " style="background-color: rgba(0, 0, 0, 0.747);">
-                        <h5>Benvenuti nel nostro sito</h5>
-                        <p>Scopri di più sui nostri prodotti e servizi</p>
+                        <h5>{{ __('ui.Benvenuti nel nostro sito') }}</h5>
+                        <p> {{ __('ui.Scopri di più sui nostri prodotti e servizi') }}</p>
+                        <x-add_article />
                     </div>
-                    <x-add_article />
                 </div>
 
                 <!-- Seconda immagine -->
@@ -19,10 +19,11 @@
                     <img src="images\flat-lay-clothing-photos_3414.webp" class="d-block w-100" alt="Immagine 2"
                         style="object-fit: cover;">
                     <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.747);">
-                        <h5>Innovazione e Qualità</h5>
-                        <p>Offriamo soluzioni moderne per le tue esigenze</p>
+                        <h5>{{ __('ui.Innovazione e Qualità') }}</h5>
+                        <p> {{ __('ui.Offriamo soluzioni moderne per le tue esigenze') }}</p>
+                        <x-add_article />
                     </div>
-                    <x-add_article />
+
                 </div>
 
                 <!-- Terza immagine -->
@@ -30,10 +31,10 @@
                     <img src="images\digital-marketing-for-luxury-brands-scaled.jpg" class="d-block w-100"
                         alt="Immagine 3" style="object-fit: cover;">
                     <div class="carousel-caption d-none d-md-block" style="background-color: rgba(0, 0, 0, 0.747);">
-                        <h5>Contattaci oggi</h5>
-                        <p>Unisciti alla nostra community</p>
+                        <h5>{{ __('ui.Contattataci Oggi') }}</h5>
+                        <p>{{ __('ui.Unisciti alla nostra community!') }}</p>
+                        <x-add_article />
                     </div>
-                    <x-add_article />
                 </div>
             </div>
 
@@ -50,29 +51,31 @@
     </div>
 
 
-
-    <div class="col-12 col-md-8 mx-auto">
-
-
-
-
-
-
-
-        <div class="row height-custom justify-content-center align-items-center py-3 mx-4">
-            @forelse ($articles as $article)
+    <div class="row align-items-start justify-content-center w-100">
+        <div class="col-12 col-md-8">
+            <div class="row height-custom justify-content-center align-items-center py-3 mx-4">
+                @forelse ($articles as $article)
                 <div class="col-12 col-md-4">
                     <x-card :article="$article" />
                 </div>
-            @empty
+                @empty
                 <div class="col-12">
                     <h3 class="text-center">{{ __('ui.Non sono ancora stati creati articoli.') }}</h3>
                 </div>
-            @endforelse
+                @endforelse
+            </div>
+        </div>
 
-
+        <div class="col-12 col-md-3 py-3 mt-3">
+            <div class="card h-50 mx-auto bg-body-secondary">
+                <h3 class="text-center">{{ __('ui.Carrello') }}</h3>
+                <p class="text-center">{{ __('ui.Quì potrai vedere i tuoi articoli') }}</p>
+            </div>
         </div>
     </div>
+
+
+
 
 
 

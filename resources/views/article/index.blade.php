@@ -22,9 +22,15 @@
                     @endforelse
                 </div>
 
-                <div class="d-flex justify-content-center">
-                    <div>
-                        {{ $articles->links() }}
+                <div class="d-flex justify-content-center pagination">
+                    <div >
+                        <ul class="pagination">
+                            <li class="page-item disabled">
+                                {{ $articles->links() }}
+                            </li>
+
+                        </ul>
+
                     </div>
                 </div>
 

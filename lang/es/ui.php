@@ -58,5 +58,15 @@ return
 "Non sono ancora stati revisionati articoli" => "Aún no se han revisado artículos.",
 "Aggiungi un nuovo articolo" => "Agregar un nuevo articulo",
 "Gestisci le immagini" => "Gestionar las imágenes",
+"Carrello" => "Carrito",
+"Quì potrai vedere i tuoi articoli" => "Puedes ver tus articulos",
+
+
+"Contattataci Oggi" => "Contactate con Nosotros Hoy",
+"Unisciti alla nostra community!" => "¡Unete a nuestra comunidad!",
+"Innovazione e Qualità" => "Innovación y Calidad",
+"Offriamo soluzioni moderne per le tue esigenze" => "Ofrecemos soluciones modernas para sus necesidades",
+"Scopri di più sui nostri prodotti e servizi" => "Descubre más sobre nuestros productos y servicios",
+"Benvenuti nel nostro sito" => "Bienvenidos al nuestro sitio",
 
 ];

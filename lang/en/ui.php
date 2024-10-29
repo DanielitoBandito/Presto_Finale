@@ -59,4 +59,12 @@
 "Non sono ancora stati revisionati articoli" => "No articles have been reviewed yet.",
 "Aggiungi un nuovo articolo" => "Add a new article",
 "Gestisci le immagini" => "Manage images",
+"Carrello" => "Cart",
+"Quì potrai vedere i tuoi articoli" => "You can see your articles",
+"Contattataci Oggi" => "Contact Us Today",
+"Unisciti alla nostra community!" => "Join our community!",
+"Innovazione e Qualità" => "Innovation and Quality",
+"Offriamo soluzioni moderne per le tue esigenze" => "We offer modern solutions for your needs",
+"Scopri di più sui nostri prodotti e servizi" => "Discover more about our products and services",
+"Benvenuti nel nostro sito" => "Welcome to our website",
  ];

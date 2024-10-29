@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use App\Models\Image;
+use App\Models\Article;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

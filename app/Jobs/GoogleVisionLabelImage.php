@@ -3,7 +3,6 @@
 namespace App\Jobs;
 
 use App\Models\Image;
-use App\Jobs\GoogleVisionLabelImage;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Foundation\Queue\Queueable;
@@ -38,7 +37,7 @@ class GoogleVisionLabelImage implements ShouldQueue
         $response = $imageAnnotator->labelDetection($image);
         $labels = $response->getLabelAnnotations();
 
-        if($lables) {
+        if($labels) {
             $result = [];
             foreach ($labels as $label) {
                 $result[] = $label->getDescription();

@@ -3,11 +3,15 @@
 namespace App\Jobs;
 
 use App\Models\Image;
-use Spatie\Image\Image as SpatieImage;
+use App\Jobs\RemoveFaces;
 use Spatie\Image\Enums\Fit;
 use Spatie\Image\Enums\AlignPosition;
+use Illuminate\Queue\SerializesModels;
+use Spatie\Image\Image as SpatieImage;
+use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Foundation\Bus\Dispatchable;
 use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 
 class RemoveFaces implements ShouldQueue

@@ -51,12 +51,15 @@
     </div>
 
 
-    <div class="row align-items-start justify-content-center w-100">
+    <div class="row align-items-start justify-content-center">
         <div class="col-12 col-md-8">
             <div class="row height-custom justify-content-center align-items-center py-3 mx-4">
                 @forelse ($articles as $article)
-                <div class="col-12 col-md-4">
+                <div class="col-md-4 d-lg-flex d-none">
                     <x-card :article="$article" />
+                </div >
+                <div class="col-6 col-md-4 d-md-none d-flex">
+                    <x-small-card :article="$article" />
                 </div>
                 @empty
                 <div class="col-12">
@@ -66,7 +69,7 @@
             </div>
         </div>
 
-        <div class="col-12 col-md-3 py-3 mt-3">
+        <div class="d-none d-lg-block col-md-3 py-3 mt-3">
             <div class="card h-50 mx-auto bg-body-secondary" style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;">
                 <h3 class="text-center">{{ __('ui.Carrello') }}</h3>
                 <p class="text-center">{{ __('ui.Quì potrai vedere i tuoi articoli') }}</p>

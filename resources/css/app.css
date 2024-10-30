@@ -224,11 +224,6 @@ footer {
     color: rgb(0, 0, 0);
 }
 
-.dropdown-toggle-mobile {
-    background-color: rgb(106, 156, 137);
-    color: white;
-    transition: 0.4s;
-}
 
 
 .form-control {
@@ -723,10 +718,76 @@ footer {
 
 
 
+
+/* ----------------MOBILE---------------- */
+
+
+/* NAVBAR */
+
 .searchbar-mobile {
     display: flex;
     margin-top: 10px;
 }
+
+.dropdown-toggle-mobile {
+    background-color: rgb(106, 156, 137);
+    color: white;
+    transition: 0.4s;
+}
+
+
+/* ARTICLE-CARD */
+
+
+.article-card-sm {
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    overflow: hidden; 
+    margin: 10px; 
+    max-width: 150px; 
+}
+
+.image-container-sm {
+    height: 100px; 
+    overflow: hidden; 
+}
+
+.card-img-top-sm {
+    width: 100%;
+    height: auto; 
+}
+
+.article-details-sm {
+    padding: 5px; 
+}
+
+.article-name-sm {
+    font-size: 14px; 
+}
+
+.article-description-sm {
+    font-size: 12px; 
+}
+
+.article-price-sm {
+    font-weight: bold; 
+    font-size: 14px; 
+}
+
+.article-buttons-sm {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 5px; 
+}
+
+.small-button {
+    font-size: 10px; 
+    padding: 5px 8px; 
+}
+
+
+
+
 
 @media (min-width: 992px) {
     .searchbar-mobile {

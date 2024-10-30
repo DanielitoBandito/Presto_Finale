@@ -1,9 +1,7 @@
 <div class="article-card">
-    <div class="image-container">
-        <img src="{{ $article->images->count() > 0 ? $article->images->first()->getUrl() : '/images/logo-color-edited.png' }}"
-            alt="Immagine dell'articolo {{ $article->title }}" class="card-img-top">
-    </div>
-    <div class="article-details">
+    <img src="{{ $article->images->count() > 0 ? $article->images->first()->getUrl() : '/images/logo-color-edited.png' }}"
+        alt="Immagine dell'articolo {{ $article->title }}" class="card-img-top" style="height: 150px; width: 100%; object-fit: contain;">
+    <div class="article-details" style="height: 250px; overflow-y: auto; padding: 10px;">
         <h2 class="article-name text-truncate">{{ $article->title }}</h2>
         <p class="article-description text-truncate">{{ $article->description }}</p>
         <p class="article-price">€ {{ $article->price }}</p>
@@ -14,5 +12,4 @@
         </div>
     </div>
 </div>
-
 

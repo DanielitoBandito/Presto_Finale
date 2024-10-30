@@ -8,8 +8,8 @@
                 @forelse ($articles_checked as $article)
                 @if ($article->user_id !== auth()->id())
                 <div class="col-12 col-md-4">
-                    <div class="article-card mt-0">
-                        <img src="{{ $article->images->count() > 0 ? $article->images->first()->getUrl(300, 300) : '/images/logo-color-edited.png' }}"
+                    <div class="article-card-rev mt-0">
+                        <img src="{{ $article->images->count() > 0 ? $article->images->first()->getUrl() : '/images/logo-color-edited.png' }}"
                             alt="Immagine dell'articolo {{ $article->title }}" class="card-img-top img-fluid" style="height: 200px; object-fit: contain;">
                         <div class="article-details">
                             <h2 class="article-name">{{ $article->title }}</h2>

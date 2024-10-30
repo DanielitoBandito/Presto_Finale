@@ -540,6 +540,22 @@ footer {
     justify-content: space-between;
 }
 
+
+.article-card-rev {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
 .image-container {
     height: 150px;
     display: flex;

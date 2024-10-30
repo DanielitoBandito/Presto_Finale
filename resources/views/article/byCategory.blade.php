@@ -1,11 +1,12 @@
 <x-layout>
 
     <div class="container-fluid">
+        
         <div class="row">
             <x-aside_hp />
 
 
-            <div class="col-12 col-md-10">
+            <div class="col-12 col-md-10 w-90">
                 <div class="row mt-2 justify-content-center align-items-center text-center">
                     <div class="col-12 w-50">
                         <h1 class="display-5 deco-title bg-body-secondary ">{{ __('ui.Categoria') }}:

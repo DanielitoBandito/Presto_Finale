@@ -1,7 +1,7 @@
 <a href="{{ route('article.show', compact('article')) }}" style="text-decoration: none; color: inherit;" >
     <div class="article-card-sm small-card">
         <div class="image-container" style="position: relative;">
-            <img src="{{ $article->images->count() > 0 ? $article->images->first()->getUrl() : '/images/logo-color-edited.png' }}"
+            <img src="{{ $article->images->count() > 0 ? $article->images->first()->getUrl(800,800) : '/images/logo-color-edited.png' }}"
                 alt="Immagine dell'articolo {{ $article->title }}" class="card-img-top">
 
             <div class="icon-container" style="position: absolute; top: 10px; right: 10px;">

@@ -12,18 +12,21 @@
                 </div>
                 <div class="row height-custom justify-content-center align item-center py-3">
                     @forelse ($articles as $article)
-                    <div class="col-12 col-md-3">
-                        <x-card :article="$article" />
-                    </div>
+                        <div class="col-12 col-md-3 d-lg-flex d-none">
+                            <x-card :article="$article" />
+                        </div>
+                        <div class="col-6 col-md-4 d-md-none d-flex">
+                            <x-small-card :article="$article" />
+                        </div>
                     @empty
-                    <div class="col-12">
-                        <h3 class="text-center" {{ __('ui.Non sono ancora stati creati articoli.')}}></h3>
-                    </div>
+                        <div class="col-12">
+                            <h3 class="text-center" {{ __('ui.Non sono ancora stati creati articoli.') }}></h3>
+                        </div>
                     @endforelse
                 </div>
 
                 <div class="d-flex justify-content-center pagination">
-                    <div >
+                    <div>
                         <ul class="pagination">
                             <li class="page-item disabled">
                                 {{ $articles->links() }}

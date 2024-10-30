@@ -60,7 +60,7 @@
                         @foreach ($article_to_check->images as $key => $image)
                         <div class="col-md-3 col-lg-3 mb-4">
                             <div class="card shadow-sm">
-                                <img src="{{ $image->getUrl() }}" class="card-img-top rounded" alt="Immagine {{ $key + 1 }} dell'articolo '{{ $article_to_check->title }}'">
+                                <img src="{{ $image->getUrl(800,800) }}" class="card-img-top rounded" alt="Immagine {{ $key + 1 }} dell'articolo '{{ $article_to_check->title }}'">
                                 <div class="card-body" style="text-align: center">
                                     <h5 class="card-title">Labels</h5>
                                     @if ($image->labels)

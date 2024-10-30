@@ -51,7 +51,7 @@
     </div>
 
 
-    <div class="row align-items-start justify-content-center">
+    <div class="row align-items-start justify-content-center w-100">
         <div class="col-12 col-md-8">
             <div class="row height-custom justify-content-center align-items-center py-3 mx-4">
                 @forelse ($articles as $article)

@@ -121,5 +121,5 @@
     
 </nav>
 
-<x-prev-front />
+<x-search />
 

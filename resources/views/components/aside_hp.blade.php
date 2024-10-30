@@ -1,4 +1,4 @@
-<div class="col-md-2 d-none d-md-block aside mt-2 bg-body-secondary" style="max-height: 50%;">
+<div class="col-md-2  d-none d-md-block aside mt-2 bg-body-secondary" >
     <h4>{{ __('ui.Categorie') }}:</h4>
     <ul>
         @foreach ($categories as $category)

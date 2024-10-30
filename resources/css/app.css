@@ -224,6 +224,12 @@ footer {
     color: rgb(0, 0, 0);
 }
 
+.dropdown-toggle-mobile {
+    background-color: rgb(106, 156, 137);
+    color: white;
+    transition: 0.4s;
+}
+
 
 .form-control {
     height: 75%;
@@ -713,6 +719,28 @@ footer {
     margin-bottom: 5%;
     margin-top: -2%;
     text-align: center;
+}
+
+
+
+.searchbar-mobile {
+    display: flex;
+    margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+    .searchbar-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .form-search {
+        width: 85%;
+    }
+    .log-btn, .btn-rg-hm {
+        padding: 5px 10px;
+    }
 }
 
 

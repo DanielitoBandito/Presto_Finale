@@ -1,7 +1,7 @@
 <x-layout>
 
     <div class="container col-12 col-md-12">
-        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="heroCarousel" class="carousel slide carousel-fade d-none d-lg-flex" data-bs-ride="carousel">
             <div class="carousel-inner">
 
                 <!-- Prima immagine -->

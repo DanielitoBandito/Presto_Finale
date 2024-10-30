@@ -6,10 +6,10 @@
         <p class="article-description text-truncate">{{ $article->description }}</p>
         <p class="article-price">€ {{ $article->price }}</p>
         <div class="article-buttons">
-            <a href="{{ route('article.show', compact('article')) }}" class="detail-button">{{ __('ui.Dettaglio')}}</a>
+            <a href="{{ route('article.show', compact('article')) }}" class="detail-button btn-2 btn-new-sm">{{ __('ui.Dettaglio')}}</a>
+
             <a href="{{ route('byCategory', ['category' => $article->category]) }}"
-                class="category-button text-capitalize">{{ $article->category->name }}</a>
+                class="detail-button btn-2 btn-new-sm  text-capitalize">{{ $article->category->name }}</a>
         </div>
     </div>
 </div>
-

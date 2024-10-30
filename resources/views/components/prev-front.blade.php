@@ -1,7 +1,7 @@
-<div class="row d-lg-none mb-4">
+<div class="row d-lg-none mb-4 mx-auto">
     <div class="col-12 d-flex justify-content-between align-items-center">
         <div class="col-auto">
-            <a href="#" class="previous link-prev-next">&laquo; Previous</a>
+            <a href="" class="previous link-prev-next">&laquo; Previous</a>
         </div>
         <form class="d-flex d-lg-none searchbar-mobile mx-auto align-items-center justify-content-center" role="search"
             action="{{ route('article.search') }}" method="GET">
@@ -17,7 +17,7 @@
         </form>
 
         <div class="col-auto">
-            <a href="#" class="next link-prev-next">Next &raquo;</a>
+            <a href="" class="next link-prev-next">Next &raquo;</a>
         </div>
     </div>
 

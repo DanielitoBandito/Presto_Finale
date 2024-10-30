@@ -2,7 +2,7 @@
 
     <div class="container mt-5 mb-3">
     
-        <div class="row w-100 mt-3">
+        <div class="row w-100 ">
             <!-- Sezione Informazioni Articolo -->
             <div class="col-md-5 rounded shadow bg-body-secondary p-4">
                 <!-- TITOLO -->

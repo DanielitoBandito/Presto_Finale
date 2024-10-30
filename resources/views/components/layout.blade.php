@@ -13,6 +13,8 @@
 
     <x-header />
 
+   
+
     <div class=" wrapper d-flex flex-column min-vh-100">
        {{ $slot }}
     </div>

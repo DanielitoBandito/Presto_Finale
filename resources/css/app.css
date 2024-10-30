@@ -524,11 +524,21 @@ footer {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
+    height: 370px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
+    justify-content: space-between;
+}
+
+.image-container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; 
 }
 
 
@@ -547,8 +557,15 @@ footer {
 
 /* Dettagli dell'articolo */
 .article-details {
-    padding: 15px;
-    text-align: center;
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.card-img-top {
+    height: 150px;
+    width: 100%;
+    object-fit: contain;
 }
 
 /* Nome dell'articolo */
@@ -577,7 +594,8 @@ footer {
 /* Pulsanti */
 .article-buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .article-buttons button {

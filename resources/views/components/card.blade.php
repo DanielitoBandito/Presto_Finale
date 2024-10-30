@@ -1,6 +1,8 @@
 <div class="article-card">
-    <img src="{{ $article->images->count() > 0 ? $article->images->first()->getUrl() : '/images/logo-color-edited.png' }}"
-        alt="Immagine dell'articolo {{ $article->title }}" class="card-img-top img-fluid" style="height: 300px; object-fit: contain;">
+    <div class="image-container">
+        <img src="{{ $article->images->count() > 0 ? $article->images->first()->getUrl() : '/images/logo-color-edited.png' }}"
+            alt="Immagine dell'articolo {{ $article->title }}" class="card-img-top">
+    </div>
     <div class="article-details">
         <h2 class="article-name text-truncate">{{ $article->title }}</h2>
         <p class="article-description text-truncate">{{ $article->description }}</p>
@@ -12,3 +14,5 @@
         </div>
     </div>
 </div>
+
+

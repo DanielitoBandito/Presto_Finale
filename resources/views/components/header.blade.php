@@ -2,7 +2,7 @@
     <div class="container-fluid">
 
         <div class="col-md-1 col-3" style="cursor: pointer">
-            <img src="{{ asset('images/logo-color-edited.png') }}" alt="" onclick="location.href='/'"
+            <img src="{{ asset('images/DR.png') }}" alt="" onclick="location.href='/'"
                 class="custom-image">
         </div>
 

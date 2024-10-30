@@ -69,13 +69,6 @@
             </div>
         </div>
 
-        <div class="d-none d-lg-block col-md-3 py-3 mt-3">
-            <div class="card h-50 mx-auto bg-body-secondary" style="box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;">
-                <h3 class="text-center">{{ __('ui.Carrello') }}</h3>
-                
-                <p class="text-center">{{ __('ui.Quì potrai vedere i tuoi articoli') }}</p>
-            </div>
-        </div>
     </div>
 
 

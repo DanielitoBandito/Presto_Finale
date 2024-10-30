@@ -64,21 +64,20 @@
                                 <div class="card-body" style="text-align: center">
                                     <h5 class="card-title">Labels</h5>
                                     @if ($image->labels)
-                                    <p>
+                                        <p>
                                         @foreach ($image->labels as $label)
-                                        #{{ $label }},
+                                            #{{ $label }},
                                         @endforeach
-                                    </p>
+                                        </p>
                                     @else
-                                    <p class="fst-italic text-muted">No labels</p>
+                                        <p class="fst-italic text-muted">No labels</p>
                                     @endif
-
                                     <h5 class="mt-3">Ratings</h5>
                                     @foreach (['adult', 'violence', 'spoof', 'racy', 'medical'] as $rating)
-                                    <div class="d-flex align-items-center my-2">
-                                        <span class="badge bg-{{ $image->$rating ? 'danger' : 'secondary' }} mx-2"></span>
-                                        <span>{{ $rating }}</span>
-                                    </div>
+                                        <div class="d-flex align-items-center my-2">
+                                            <i class="{{ $image->$rating }} mx-2"></i>
+                                            <span>{{ ucfirst($rating) }}</span>
+                                        </div>
                                     @endforeach
                                 </div>
                             </div>

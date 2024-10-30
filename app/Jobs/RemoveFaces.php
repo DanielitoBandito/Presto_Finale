@@ -3,7 +3,6 @@
 namespace App\Jobs;
 
 use App\Models\Image;
-use App\Jobs\RemoveFaces;
 use Spatie\Image\Enums\Fit;
 use Spatie\Image\Enums\AlignPosition;
 use Illuminate\Queue\SerializesModels;

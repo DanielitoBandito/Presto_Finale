@@ -2,7 +2,7 @@
 
     <div class="container-fluid">
         
-        <div class="row">
+        <div class="row mx-auto">
             <x-aside_hp />
 
 
@@ -16,8 +16,12 @@
                 </div>
                 <div class="row height-custom justify-content-center align-items-center py-2">
                     @forelse ($articles as $article)
-                    <div class="col-12 col-md-3">
+                    
+                    <div class="col-12 col-md-3 d-lg-flex d-none">
                         <x-card :article="$article" />
+                    </div>
+                    <div class="col-6 col-md-4 d-md-none d-flex">
+                        <x-small-card :article="$article" />
                     </div>
                     @empty
                     <div class="col-12 text-center">

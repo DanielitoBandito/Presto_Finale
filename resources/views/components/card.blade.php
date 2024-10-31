@@ -23,7 +23,7 @@
   height: 370px;
   background: rgba(217, 217, 217, 0.58);
   border: 1px solid white;
-  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 17px;
   text-align: center;
   cursor: pointer;

@@ -33,10 +33,11 @@
                     <p style="display: inline; color: red;">* </p style="color: black">{{__('ui.Perchè vuoi diventare Revisor?')}}
                 </label>
                 <textarea name="question" id="question" cols="15" rows="6"
-                    class="form-input-add @error('question') is-invalid @enderror" placeholder="Domanda.."></textarea>
+                    class="form-input-add @error('question') is-invalid @enderror" placeholder="Domanda.."> </textarea>
                 @error('question')
                 <p class="error-message">{{ $message }}</p>
                 @enderror
+               
             </div>
 
             <div class="d-flex justify-content-center">

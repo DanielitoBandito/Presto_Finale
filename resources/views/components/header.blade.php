@@ -59,7 +59,7 @@
 
 
         <!-- Sezione "Accedi" e "Registrati" per desktop o opzioni utente autenticato -->
-        <div class="col-md-1 col-1 p-0 mw-100">
+        <div class="col-md-1 col-1 p-0">
             @if (!auth()->check())
             <div class="container align-items-center text-center" role="group" aria-label="Basic example">
                 <div class="d-none d-md-flex col-md-12 justify-content-center align-items-center w-100">
@@ -72,7 +72,7 @@
                 </div>
             </div>
             @else
-            <div class="btn-group dropdown button m-1">
+            <div class="btn-group dropdown button">
                 <a class="btn dropdown-toggle d-lg-block d-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     {{ __('ui.Ciao') }}, {{ Auth::user()->name }}
                 </a>

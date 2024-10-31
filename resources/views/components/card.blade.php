@@ -1,4 +1,4 @@
-<div class="article-card">
+<div class="card-new">
     <img src="{{ $article->images->count() > 0 ? $article->images->first()->getUrl(800,800) : '/images/logo-color-edited.png' }}"
         alt="Immagine dell'articolo {{ $article->title }}" class="card-img-top" style="height: 150px; width: 100%; object-fit: contain;">
     <div class="article-details" style="height: 250px; overflow-y: auto; padding: 10px;">
@@ -13,3 +13,35 @@
         </div>
     </div>
 </div>
+
+
+<style>
+    .card-new {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 300px;
+  height: 370px;
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+  padding: 10px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.card-new:hover {
+  border: 2px solid #28b8b6d0;
+  transform: scale(1.03);   
+}   
+</style>

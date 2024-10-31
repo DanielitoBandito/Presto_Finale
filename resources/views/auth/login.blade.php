@@ -42,7 +42,7 @@
                                 @enderror
                             </div>
                             <div class="text-center">
-                                <input type="submit" value="{{ __('ui.Accedi') }}" class="btn btn-rg mt-3">
+                                <input type="submit" value="{{ __('ui.Accedi') }}" class="btn-2 btn-new mt-3">
                             </div>
                         </form>
                     </div>

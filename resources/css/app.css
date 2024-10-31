@@ -265,7 +265,7 @@ footer {
 }
 
 .card-header {
-    border-radius: 0%   ;
+    border-radius: 0 0 0 0 !important;
     background: #2c2c2c;
     text-align: center;
     color: white;
@@ -521,15 +521,15 @@ footer {
     width: 20%;
     height: auto;
     border-radius: 6px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     margin-top: 5%;
 }
 
 .home-background {
     background-image: url('/public/images/wemadeit-slide.png');
-    background-size: cover;
     background-position: center;
     height: 100vh;
+    width: 100%;
     color: white;
 }
 

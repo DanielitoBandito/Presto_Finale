@@ -602,7 +602,11 @@ footer {
 .article-details {
     flex-grow: 1;
     padding: 10px;
+    padding: 10px;
+    max-width: 300px;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-img-top {

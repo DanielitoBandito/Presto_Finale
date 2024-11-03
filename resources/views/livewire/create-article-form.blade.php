@@ -22,7 +22,7 @@
                 @enderror
             </div>
 
-            <div class="mb-3">
+            <div>
                 <label for="description" class="article-add">
                     <p style="display: inline; color: red;">* </p>{{ __('ui.Descrizione') }}:
                 </label>

@@ -27,12 +27,14 @@
                     <p style="display: inline; color: red;">* </p>{{ __('ui.Descrizione') }}:
                 </label>
                 <textarea id="description" cols="20" rows="6"
-                    class="form-input-add @error('description') is-invalid @enderror" wire:model.blur="description"
+                    class="form-input-add @error('description') is-invalid @enderror"
+                    wire:model.blur="description"
                     placeholder="Inserisci la descrizione (min 20 caratteri)"></textarea>
                 @error('description')
-                    <p class="error-message">{{ $message }}</p>
+                    <p class="error-message " style="margin-top:-1% " >{{ $message }}</p>
                 @enderror
             </div>
+            
 
             <div class="row">
                 <div class="mb-3 col-md-6">
